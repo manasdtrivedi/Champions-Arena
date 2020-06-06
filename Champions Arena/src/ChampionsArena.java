@@ -959,7 +959,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         );
 
         problemsFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        problemsFrame.setMinimumSize(new java.awt.Dimension(400, 300));
+        problemsFrame.setMinimumSize(new java.awt.Dimension(700, 500));
         problemsFrame.addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 problemsFrameWindowActivated(evt);
@@ -1674,6 +1674,7 @@ System.exit(0);        // TODO add your handling code here:
 
     private void submitCodeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitCodeButtonActionPerformed
         String userCode = codeTextArea.getText();
+        boolean answerIsCorrect = true;
         
         writeToFile("userCode.c", userCode);
 
@@ -1683,40 +1684,47 @@ System.exit(0);        // TODO add your handling code here:
         String data = readFromFile("compilationOutput.txt");
         if(data.contains("error")){
             JOptionPane.showMessageDialog(null, "Compilation error.");
+            cmd = "rm -f compilationOutput.txt userCode.c";
+            executeCommand(cmd);
             return;
         }
         else{
             System.out.println("Compiled successfully.");
         }
         try{
-            sql = "SELECT * FROM PROBLEM WHERE ID = '" + currentProblemID + "';";
+            sql = "SELECT * FROM TESTCASES WHERE ID = '" + currentProblemID + "';";
             rs = stmt.executeQuery(sql);
-            rs.first();
-            String inputData = (String)rs.getString("Input");
-            writeToFile("inputFile.txt", inputData);
-            String expectedOutput = (String)rs.getString("ExpectedOutput");
-            writeToFile("expectedOutput.txt", expectedOutput);
-            
+            while(rs.next()){
+                String inputData = (String)rs.getString("Input");
+                writeToFile("inputFile.txt", inputData);
+                String expectedOutput = (String)rs.getString("ExpectedOutput");
+                writeToFile("expectedOutput.txt", expectedOutput);
+                
+                cmd = "./a.out < inputFile.txt > outputFile.txt";
+                executeCommand(cmd);
+        
+                cmd = "diff outputFile.txt expectedOutput.txt &> compareOutputs.txt";
+                executeCommand(cmd);
+        
+                data = readFromFile("compareOutputs.txt");
+                if( ! data.equals("")){
+                    answerIsCorrect = false;
+                }
+            }
+            if(answerIsCorrect){
+                JOptionPane.showMessageDialog(null, "Correct answer!");
+            }
+            else{
+                JOptionPane.showMessageDialog(null, "Wrong answer. Try again!");
+            }
+            cmd = "rm -f a.out compareOutputs.txt compilationOutput.txt expectedOutput.txt userCode.c inputFile.txt outputFile.txt";
+            executeCommand(cmd);
         }
         catch(Exception e){
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
         
-        cmd = "./a.out < inputFile.txt > outputFile.txt";
-        executeCommand(cmd);
         
-        cmd = "diff outputFile.txt expectedOutput.txt &> compareOutputs.txt";
-        executeCommand(cmd);
-        
-        data = readFromFile("compareOutputs.txt");
-        if(data.equals("")){
-            JOptionPane.showMessageDialog(null, "Correct answer!");
-        }
-        else{
-            JOptionPane.showMessageDialog(null, "Wrong answer. Try again!");
-        }
-        cmd = "rm -f compareOutputs.txt compilationOutput.txt expectedOutput.txt userCode.c inputFile.txt outputFile.txt";
-        executeCommand(cmd);
         
     }//GEN-LAST:event_submitCodeButtonActionPerformed
 
