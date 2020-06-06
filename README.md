@@ -27,6 +27,22 @@ status tinyint(4) DEFAULT 0
 );
 
 
+CREATE TABLE CONTEST
+(
+ID varchar(10) PRIMARY KEY,
+Name varchar(50) NOT NULL,
+Start datetime,
+End datetime
+);
+
+
+INSERT INTO CONTEST VALUES('R1', 'Round 1', '2020-03-15 15:00:00', '2020-03-31 15:00:00');
+
+INSERT INTO CONTEST VALUES('R2', 'Round 2', '2020-06-01 17:30:00', '2020-07-20 17:30:00');
+
+INSERT INTO CONTEST VALUES('R3', 'Round 3', '2020-08-15 20:05:00', '2020-08-30 22:20:00');
+
+
 CREATE TABLE PROBLEM
 (
 ID varchar(10) PRIMARY KEY,
