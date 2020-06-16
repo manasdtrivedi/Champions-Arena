@@ -22,6 +22,24 @@ import java.util.Scanner;
  *
  * @author Manas Trivedi
  */
+
+/*
+
+Sample program for testing: Adding two numbers
+
+#include<stdio.h>
+int main(){
+    int t, a, b;
+    scanf("%d", &t);
+    while(t--){
+        scanf("%d%d", &a, &b);
+        printf("%d\n", a + b);
+    }
+    return 0;
+}
+
+
+*/
 public class ChampionsArena extends javax.swing.JFrame {
     Connection con = null;
     Statement stmt = null;
@@ -34,6 +52,7 @@ public class ChampionsArena extends javax.swing.JFrame {
     DefaultTableModel tm3 = null;
     DefaultTableModel tm4 = null;
     DefaultTableModel tm5 = null;
+    DefaultTableModel tm6 = null;
     String currentProblemID = null;
     String cmd = null;
     int contestMode = 0; // 0 for solving old problems, 1 for solving particular previous contest's problems, 2 for solving current contest
@@ -187,8 +206,6 @@ public class ChampionsArena extends javax.swing.JFrame {
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
         jButton22 = new javax.swing.JButton();
         jButton23 = new javax.swing.JButton();
         contestsFrame = new javax.swing.JFrame();
@@ -203,6 +220,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         jButton28 = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTable4 = new javax.swing.JTable();
+        standingsButton = new javax.swing.JButton();
         solveProblemFrame = new javax.swing.JFrame();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
@@ -217,11 +235,17 @@ public class ChampionsArena extends javax.swing.JFrame {
         jLabel28 = new javax.swing.JLabel();
         problemLevelLabel = new javax.swing.JLabel();
         jButton29 = new javax.swing.JButton();
+        standingsFrame = new javax.swing.JFrame();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jTable6 = new javax.swing.JTable();
+        backToContestProblemsButton = new javax.swing.JButton();
         signUpButton = new javax.swing.JButton();
         signInButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
-        createAccountFrame.setMinimumSize(new java.awt.Dimension(400, 300));
+        createAccountFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        createAccountFrame.setMinimumSize(new java.awt.Dimension(1837, 1055));
+        createAccountFrame.setPreferredSize(new java.awt.Dimension(1837, 1055));
         createAccountFrame.addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 createAccountFrameWindowActivated(evt);
@@ -290,24 +314,17 @@ public class ChampionsArena extends javax.swing.JFrame {
                     .addComponent(jLabel13))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(createAccountFrameLayout.createSequentialGroup()
-                        .addComponent(jComboBox2, 0, 251, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(createAccountFrameLayout.createSequentialGroup()
-                        .addComponent(jPasswordField1, javax.swing.GroupLayout.DEFAULT_SIZE, 251, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(createAccountFrameLayout.createSequentialGroup()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 251, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(createAccountFrameLayout.createSequentialGroup()
-                        .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 251, Short.MAX_VALUE)
-                        .addContainerGap())))
+                    .addComponent(jComboBox2, 0, 1661, Short.MAX_VALUE)
+                    .addComponent(jPasswordField1, javax.swing.GroupLayout.DEFAULT_SIZE, 1661, Short.MAX_VALUE)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 1661, Short.MAX_VALUE)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 1661, Short.MAX_VALUE))
+                .addContainerGap())
             .addGroup(createAccountFrameLayout.createSequentialGroup()
                 .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 190, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1616, Short.MAX_VALUE)
                 .addComponent(jButton2))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, createAccountFrameLayout.createSequentialGroup()
-                .addContainerGap(149, Short.MAX_VALUE)
+                .addContainerGap(1574, Short.MAX_VALUE)
                 .addComponent(createAccountButton)
                 .addGap(132, 132, 132))
         );
@@ -336,10 +353,12 @@ public class ChampionsArena extends javax.swing.JFrame {
                 .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2))
-                .addContainerGap())
+                .addContainerGap(741, Short.MAX_VALUE))
         );
 
-        loginFrame.setMinimumSize(new java.awt.Dimension(400, 300));
+        loginFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        loginFrame.setMinimumSize(new java.awt.Dimension(1837, 1055));
+        loginFrame.setPreferredSize(new java.awt.Dimension(1837, 1055));
 
         jLabel5.setText("Enter username:");
 
@@ -398,7 +417,7 @@ public class ChampionsArena extends javax.swing.JFrame {
                     .addGroup(loginFrameLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jButton3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 166, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1592, Short.MAX_VALUE)
                         .addComponent(jButton4)))
                 .addContainerGap())
         );
@@ -415,14 +434,15 @@ public class ChampionsArena extends javax.swing.JFrame {
                     .addComponent(jLabel6))
                 .addGap(18, 18, 18)
                 .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 774, Short.MAX_VALUE)
                 .addGroup(loginFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton3)
                     .addComponent(jButton4))
                 .addContainerGap())
         );
 
-        dashboard.setMinimumSize(new java.awt.Dimension(400, 300));
+        dashboard.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        dashboard.setMinimumSize(new java.awt.Dimension(1837, 1055));
         dashboard.addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 dashboardWindowActivated(evt);
@@ -500,12 +520,12 @@ public class ChampionsArena extends javax.swing.JFrame {
                     .addGroup(dashboardLayout.createSequentialGroup()
                         .addGap(161, 161, 161)
                         .addComponent(jLabel7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 111, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1520, Short.MAX_VALUE)
                         .addComponent(jButton24))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dashboardLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jButton6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 168, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1595, Short.MAX_VALUE)
                         .addComponent(jButton5)))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dashboardLayout.createSequentialGroup()
@@ -513,7 +533,7 @@ public class ChampionsArena extends javax.swing.JFrame {
                 .addGroup(dashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton21, javax.swing.GroupLayout.DEFAULT_SIZE, 93, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 163, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1599, Short.MAX_VALUE)
                 .addGroup(dashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jButton16, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -537,14 +557,15 @@ public class ChampionsArena extends javax.swing.JFrame {
                     .addComponent(jButton21))
                 .addGap(18, 18, 18)
                 .addComponent(jButton16)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 767, Short.MAX_VALUE)
                 .addGroup(dashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton5)
                     .addComponent(jButton6))
                 .addContainerGap())
         );
 
-        searchFrame.setMinimumSize(new java.awt.Dimension(700, 700));
+        searchFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        searchFrame.setMinimumSize(new java.awt.Dimension(1837, 1055));
         searchFrame.addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 searchFrameWindowActivated(evt);
@@ -608,7 +629,7 @@ public class ChampionsArena extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, searchFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(searchFrameLayout.createSequentialGroup()
                             .addContainerGap()
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 761, Short.MAX_VALUE))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1813, Short.MAX_VALUE))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, searchFrameLayout.createSequentialGroup()
                             .addContainerGap()
                             .addComponent(jLabel8))
@@ -622,14 +643,14 @@ public class ChampionsArena extends javax.swing.JFrame {
                                     .addGap(4, 4, 4)))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(searchFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jComboBox1, 0, 639, Short.MAX_VALUE)
-                                .addComponent(jTextField5, javax.swing.GroupLayout.DEFAULT_SIZE, 639, Short.MAX_VALUE)
-                                .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 639, Short.MAX_VALUE)))
+                                .addComponent(jComboBox1, 0, 1667, Short.MAX_VALUE)
+                                .addComponent(jTextField5, javax.swing.GroupLayout.DEFAULT_SIZE, 1667, Short.MAX_VALUE)
+                                .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1667, Short.MAX_VALUE)))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, searchFrameLayout.createSequentialGroup()
                             .addContainerGap()
                             .addComponent(jLabel12)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.DEFAULT_SIZE, 595, Short.MAX_VALUE)))
+                            .addComponent(jTextField6, javax.swing.GroupLayout.DEFAULT_SIZE, 1604, Short.MAX_VALUE)))
                     .addGroup(searchFrameLayout.createSequentialGroup()
                         .addGap(353, 353, 353)
                         .addComponent(jButton9))
@@ -639,7 +660,7 @@ public class ChampionsArena extends javax.swing.JFrame {
                         .addComponent(jButton10)))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, searchFrameLayout.createSequentialGroup()
-                .addContainerGap(732, Short.MAX_VALUE)
+                .addContainerGap(1789, Short.MAX_VALUE)
                 .addComponent(jButton11))
         );
         searchFrameLayout.setVerticalGroup(
@@ -663,7 +684,7 @@ public class ChampionsArena extends javax.swing.JFrame {
                 .addComponent(jButton9)
                 .addGap(29, 29, 29)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 470, Short.MAX_VALUE)
                 .addGroup(searchFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
                     .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -677,7 +698,9 @@ public class ChampionsArena extends javax.swing.JFrame {
                     .addComponent(jButton11)))
         );
 
-        requests.setMinimumSize(new java.awt.Dimension(600, 400));
+        requests.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        requests.setMinimumSize(new java.awt.Dimension(1837, 1055));
+        requests.setPreferredSize(new java.awt.Dimension(1837, 1055));
         requests.addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 requestsWindowActivated(evt);
@@ -742,8 +765,8 @@ public class ChampionsArena extends javax.swing.JFrame {
                                     .addComponent(jLabel14))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(requestsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField8, javax.swing.GroupLayout.DEFAULT_SIZE, 221, Short.MAX_VALUE)
-                                    .addComponent(jTextField7, javax.swing.GroupLayout.DEFAULT_SIZE, 221, Short.MAX_VALUE))
+                                    .addComponent(jTextField8, javax.swing.GroupLayout.DEFAULT_SIZE, 1552, Short.MAX_VALUE)
+                                    .addComponent(jTextField7, javax.swing.GroupLayout.DEFAULT_SIZE, 1552, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(requestsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jButton14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -767,13 +790,15 @@ public class ChampionsArena extends javax.swing.JFrame {
                     .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel15)
                     .addComponent(jButton15))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 719, Short.MAX_VALUE)
                 .addGroup(requestsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton19)
                     .addComponent(jButton20)))
         );
 
-        friendsFrame.setMinimumSize(new java.awt.Dimension(400, 300));
+        friendsFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        friendsFrame.setMinimumSize(new java.awt.Dimension(1837, 1055));
+        friendsFrame.setPreferredSize(new java.awt.Dimension(1837, 1055));
         friendsFrame.addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 friendsFrameWindowActivated(evt);
@@ -819,7 +844,7 @@ public class ChampionsArena extends javax.swing.JFrame {
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(friendsFrameLayout.createSequentialGroup()
                         .addComponent(jButton17)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 172, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1598, Short.MAX_VALUE)
                         .addComponent(jButton18)))
                 .addContainerGap())
         );
@@ -828,14 +853,15 @@ public class ChampionsArena extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, friendsFrameLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 813, Short.MAX_VALUE)
                 .addGroup(friendsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton17)
                     .addComponent(jButton18))
                 .addContainerGap())
         );
 
-        profileFrame.setMinimumSize(new java.awt.Dimension(400, 300));
+        profileFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        profileFrame.setMinimumSize(new java.awt.Dimension(1837, 1055));
         profileFrame.addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 profileFrameWindowActivated(evt);
@@ -853,10 +879,6 @@ public class ChampionsArena extends javax.swing.JFrame {
         jLabel21.setText("College:");
 
         jLabel22.setText("<college>");
-
-        jLabel23.setText("Rating:");
-
-        jLabel24.setText("<rating>");
 
         jButton22.setText("Go back to dashboard");
         jButton22.addActionListener(new java.awt.event.ActionListener() {
@@ -883,17 +905,15 @@ public class ChampionsArena extends javax.swing.JFrame {
                         .addGroup(profileFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel17)
                             .addComponent(jLabel19)
-                            .addComponent(jLabel21)
-                            .addComponent(jLabel23))
+                            .addComponent(jLabel21))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(profileFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)))
                     .addGroup(profileFrameLayout.createSequentialGroup()
                         .addComponent(jButton22)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 166, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1593, Short.MAX_VALUE)
                         .addComponent(jButton23)))
                 .addContainerGap())
         );
@@ -912,11 +932,7 @@ public class ChampionsArena extends javax.swing.JFrame {
                 .addGroup(profileFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel21)
                     .addComponent(jLabel22))
-                .addGap(18, 18, 18)
-                .addGroup(profileFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel23)
-                    .addComponent(jLabel24))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 131, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 903, Short.MAX_VALUE)
                 .addGroup(profileFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton22)
                     .addComponent(jButton23))
@@ -924,8 +940,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         );
 
         contestsFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        contestsFrame.setMinimumSize(new java.awt.Dimension(700, 500));
-        contestsFrame.setPreferredSize(new java.awt.Dimension(700, 500));
+        contestsFrame.setMinimumSize(new java.awt.Dimension(1837, 1055));
         contestsFrame.addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 contestsFrameWindowActivated(evt);
@@ -968,7 +983,7 @@ public class ChampionsArena extends javax.swing.JFrame {
             }
         });
 
-        showPreviousContestsButton.setText("Previous Contests");
+        showPreviousContestsButton.setText("Past Contests");
         showPreviousContestsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 showPreviousContestsButtonActionPerformed(evt);
@@ -996,7 +1011,7 @@ public class ChampionsArena extends javax.swing.JFrame {
                                 .addComponent(showCurrentContestsButton)
                                 .addGap(125, 125, 125)
                                 .addComponent(showPreviousContestsButton)))
-                        .addGap(0, 37, Short.MAX_VALUE)))
+                        .addGap(0, 1174, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         contestsFrameLayout.setVerticalGroup(
@@ -1008,7 +1023,7 @@ public class ChampionsArena extends javax.swing.JFrame {
                 .addGroup(contestsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(showCurrentContestsButton)
                     .addComponent(showPreviousContestsButton))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 618, Short.MAX_VALUE)
                 .addGroup(contestsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton25)
                     .addComponent(jButton26))
@@ -1016,7 +1031,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         );
 
         problemsFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        problemsFrame.setMinimumSize(new java.awt.Dimension(700, 500));
+        problemsFrame.setMinimumSize(new java.awt.Dimension(1837, 1055));
         problemsFrame.addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 problemsFrameWindowActivated(evt);
@@ -1052,6 +1067,13 @@ public class ChampionsArena extends javax.swing.JFrame {
         });
         jScrollPane4.setViewportView(jTable4);
 
+        standingsButton.setText("Standings");
+        standingsButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                standingsButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout problemsFrameLayout = new javax.swing.GroupLayout(problemsFrame.getContentPane());
         problemsFrame.getContentPane().setLayout(problemsFrameLayout);
         problemsFrameLayout.setHorizontalGroup(
@@ -1065,14 +1087,21 @@ public class ChampionsArena extends javax.swing.JFrame {
             .addGroup(problemsFrameLayout.createSequentialGroup()
                 .addGap(111, 111, 111)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 384, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(124, Short.MAX_VALUE))
+                .addGap(99, 99, 99)
+                .addComponent(standingsButton)
+                .addContainerGap(1153, Short.MAX_VALUE))
         );
         problemsFrameLayout.setVerticalGroup(
             problemsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, problemsFrameLayout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
+                .addGroup(problemsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(problemsFrameLayout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(problemsFrameLayout.createSequentialGroup()
+                        .addGap(117, 117, 117)
+                        .addComponent(standingsButton)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 767, Short.MAX_VALUE)
                 .addGroup(problemsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton27)
                     .addComponent(jButton28))
@@ -1080,8 +1109,8 @@ public class ChampionsArena extends javax.swing.JFrame {
         );
 
         solveProblemFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        solveProblemFrame.setMinimumSize(new java.awt.Dimension(700, 500));
-        solveProblemFrame.setPreferredSize(new java.awt.Dimension(700, 500));
+        solveProblemFrame.setMinimumSize(new java.awt.Dimension(1837, 1055));
+        solveProblemFrame.setPreferredSize(new java.awt.Dimension(1837, 1055));
         solveProblemFrame.addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 solveProblemFrameWindowActivated(evt);
@@ -1149,7 +1178,7 @@ public class ChampionsArena extends javax.swing.JFrame {
                                 .addComponent(jLabel28)
                                 .addGap(18, 18, 18)
                                 .addComponent(problemLevelLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 229, Short.MAX_VALUE))
+                                .addGap(0, 1366, Short.MAX_VALUE))
                             .addComponent(problemTitleLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addComponent(jScrollPane5)
                     .addComponent(jScrollPane6)
@@ -1186,15 +1215,65 @@ public class ChampionsArena extends javax.swing.JFrame {
                     .addGroup(solveProblemFrameLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(submitCodeButton)
-                        .addContainerGap(18, Short.MAX_VALUE))
+                        .addContainerGap(573, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, solveProblemFrameLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton29)
                         .addContainerGap())))
         );
 
+        standingsFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        standingsFrame.setMinimumSize(new java.awt.Dimension(1837, 1055));
+        standingsFrame.setPreferredSize(new java.awt.Dimension(1837, 1055));
+        standingsFrame.addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowActivated(java.awt.event.WindowEvent evt) {
+                standingsFrameWindowActivated(evt);
+            }
+        });
+
+        jTable6.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "User ID", "A", "B", "C"
+            }
+        ));
+        jScrollPane8.setViewportView(jTable6);
+
+        backToContestProblemsButton.setText("Back to Contest Problems");
+        backToContestProblemsButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backToContestProblemsButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout standingsFrameLayout = new javax.swing.GroupLayout(standingsFrame.getContentPane());
+        standingsFrame.getContentPane().setLayout(standingsFrameLayout);
+        standingsFrameLayout.setHorizontalGroup(
+            standingsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, standingsFrameLayout.createSequentialGroup()
+                .addContainerGap(716, Short.MAX_VALUE)
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(669, 669, 669))
+            .addGroup(standingsFrameLayout.createSequentialGroup()
+                .addGap(364, 364, 364)
+                .addComponent(backToContestProblemsButton)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        standingsFrameLayout.setVerticalGroup(
+            standingsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, standingsFrameLayout.createSequentialGroup()
+                .addContainerGap(316, Short.MAX_VALUE)
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(120, 120, 120)
+                .addComponent(backToContestProblemsButton)
+                .addGap(153, 153, 153))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(400, 300));
+        setMinimumSize(new java.awt.Dimension(1837, 1055));
+        setPreferredSize(new java.awt.Dimension(1837, 1055));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 formWindowActivated(evt);
@@ -1222,26 +1301,27 @@ public class ChampionsArena extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(113, 113, 113)
-                .addComponent(jLabel1)
-                .addContainerGap(122, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(82, Short.MAX_VALUE)
-                .addComponent(signUpButton, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(53, 53, 53)
-                .addComponent(signInButton, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(65, 65, 65))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(677, 677, 677)
+                        .addComponent(signUpButton, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(302, 302, 302)
+                        .addComponent(signInButton, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(807, 807, 807)
+                        .addComponent(jLabel1)))
+                .addContainerGap(646, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(63, 63, 63)
+                .addGap(414, 414, 414)
                 .addComponent(jLabel1)
-                .addGap(101, 101, 101)
+                .addGap(211, 211, 211)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(signUpButton)
                     .addComponent(signInButton))
-                .addContainerGap(95, Short.MAX_VALUE))
+                .addContainerGap(374, Short.MAX_VALUE))
         );
 
         pack();
@@ -1260,11 +1340,13 @@ public class ChampionsArena extends javax.swing.JFrame {
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
         // TODO add your handling code here:
         try{
+            Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost/cparena", "root", "1234");
             stmt = con.createStatement();
         }
         catch(Exception e){
             JOptionPane.showMessageDialog(null, e.getMessage());
+            System.exit(0);
         }
     }//GEN-LAST:event_formWindowActivated
 
@@ -1282,7 +1364,7 @@ public class ChampionsArena extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Please enter name of college to create account.");
             }
             else{
-                sql = "INSERT INTO USER VALUES('" + jTextField1.getText() + "', '" + jTextField2.getText() + "', '" + jPasswordField1.getText() + "', '" + college + "', 1500);";
+                sql = "INSERT INTO USER VALUES('" + jTextField1.getText() + "', '" + jTextField2.getText() + "', '" + jPasswordField1.getText() + "', '" + college + "');";
                 System.out.println(sql);
                 jTextField1.setText("");
                 jTextField2.setText("");
@@ -1315,7 +1397,7 @@ public class ChampionsArena extends javax.swing.JFrame {
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
         try{
             uid = jTextField3.getText();
-            String passwd = jPasswordField2.getText();
+            String passwd = new String(jPasswordField2.getPassword());
             //System.out.println(passwd);
             sql = "SELECT * FROM USER WHERE uid = '" + uid + "';";
             System.out.println(sql);
@@ -1569,7 +1651,7 @@ public class ChampionsArena extends javax.swing.JFrame {
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         String username = jTextField8.getText();
         jTextField8.setText("");
-        sql = "DELETE FROM CONNECTION WHERE user1 = '" + username + "' AND user2 = '" + uid + "';";
+        sql = "DELETE FROM CONNECTION WHERE user1 = '" + username + "' AND user2 = '" + uid + "' AND status = 0;";
         System.out.println(sql);
         try{
             stmt.executeUpdate(sql);
@@ -1647,7 +1729,6 @@ System.exit(0);        // TODO add your handling code here:
             jLabel18.setText(rs.getString("uid"));
             jLabel20.setText(rs.getString("uname"));
             jLabel22.setText(rs.getString("college"));
-            jLabel24.setText(""+rs.getInt("rating"));
         }
         catch(Exception e){
             JOptionPane.showMessageDialog(null, e.getMessage());
@@ -1693,6 +1774,7 @@ System.exit(0);        // TODO add your handling code here:
             tm4 = (DefaultTableModel)jTable4.getModel();
             tm4.setRowCount(0);
             if(contestMode == 0){ // User is here just to solve problems
+                standingsButton.setVisible(false);
                 sql = "SELECT * FROM PROBLEM WHERE ContestID IN(SELECT ID FROM CONTEST WHERE End < now());";
                 rs = stmt.executeQuery(sql);
                 while(rs.next()){
@@ -1700,6 +1782,8 @@ System.exit(0);        // TODO add your handling code here:
                 }
             }
             else if(contestMode == 1){ // User is here to give previous contest, not current
+                standingsButton.setVisible(true);
+                standingsButton.setText("Final standings");
                 sql = "SELECT * FROM PROBLEM WHERE ContestID = '" + contestID + "';";
                 rs = stmt.executeQuery(sql);
                 while(rs.next()){
@@ -1707,6 +1791,8 @@ System.exit(0);        // TODO add your handling code here:
                 }
             }
             else{ // User is here to give a current contest!
+                standingsButton.setVisible(true);
+                standingsButton.setText("Current standings");
                 sql = "SELECT * FROM PROBLEM WHERE ContestID = '" + contestID + "';";
                 rs = stmt.executeQuery(sql);
                 while(rs.next()){
@@ -1756,8 +1842,9 @@ System.exit(0);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton29ActionPerformed
 
     private void submitCodeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitCodeButtonActionPerformed
+        
         String userCode = codeTextArea.getText();
-        boolean answerIsCorrect = true;
+        int answerIsCorrect = 1;
         
         writeToFile("userCode.c", userCode);
 
@@ -1766,43 +1853,68 @@ System.exit(0);        // TODO add your handling code here:
         
         String data = readFromFile("compilationOutput.txt");
         if(data.contains("error")){
+            answerIsCorrect = 0;
             JOptionPane.showMessageDialog(null, "Compilation error.");
             cmd = "rm -f compilationOutput.txt userCode.c";
             executeCommand(cmd);
-            return;
         }
         else{
             System.out.println("Compiled successfully.");
-        }
-        try{
-            sql = "SELECT * FROM TESTCASE WHERE ID = '" + currentProblemID + "';";
-            rs = stmt.executeQuery(sql);
-            while(rs.next()){
-                String inputData = (String)rs.getString("Input");
-                writeToFile("inputFile.txt", inputData);
-                String expectedOutput = (String)rs.getString("ExpectedOutput");
-                writeToFile("expectedOutput.txt", expectedOutput);
+        
+            try{
+                sql = "SELECT * FROM TESTCASE WHERE ID = '" + currentProblemID + "';";
+                rs = stmt.executeQuery(sql);
+                while(rs.next()){
+                    String inputData = (String)rs.getString("Input");
+                    writeToFile("inputFile.txt", inputData);
+                    String expectedOutput = (String)rs.getString("ExpectedOutput");
+                    writeToFile("expectedOutput.txt", expectedOutput);
                 
-                cmd = "./a.out < inputFile.txt > outputFile.txt";
-                executeCommand(cmd);
+                    cmd = "./a.out < inputFile.txt > outputFile.txt";
+                    executeCommand(cmd);
         
-                cmd = "diff outputFile.txt expectedOutput.txt &> compareOutputs.txt";
-                executeCommand(cmd);
+                    cmd = "diff outputFile.txt expectedOutput.txt &> compareOutputs.txt";
+                    executeCommand(cmd);
         
-                data = readFromFile("compareOutputs.txt");
-                if( ! data.equals("")){
-                    answerIsCorrect = false;
+                    data = readFromFile("compareOutputs.txt");
+                    if( ! data.equals("")){
+                        answerIsCorrect = 0;
+                    }
+                }
+                if(answerIsCorrect == 1){
+                    JOptionPane.showMessageDialog(null, "Correct answer!");
+                }
+                else{
+                    JOptionPane.showMessageDialog(null, "Wrong answer. Try again!");
+                }
+            
+                cmd = "rm -f a.out compareOutputs.txt compilationOutput.txt expectedOutput.txt userCode.c inputFile.txt outputFile.txt";
+                executeCommand(cmd);
+            
+            
+            }
+            catch(Exception e){
+                JOptionPane.showMessageDialog(null, e.getMessage());
+            }
+        }
+        
+        try{
+            if(contestMode == 2){
+                sql= "SELECT * FROM SUBMISSION WHERE uid = '" + uid + "' AND ContestID = '" + contestID + "';";
+                rs = stmt.executeQuery(sql);
+                if(! rs.next()){
+                    sql = "INSERT INTO SUBMISSION VALUES('" + uid + "', '" + contestID + "', 0, 0, 0);";
+                    stmt.executeUpdate(sql);
+                    sql = "UPDATE SUBMISSION SET " + currentProblemID.substring(1, 2) + " = " + answerIsCorrect + " WHERE uid = '" + uid + "' AND ContestID = '" + contestID + "';";
+                    stmt.executeUpdate(sql);
+                }
+                else{
+                    if(rs.getInt(currentProblemID.substring(1, 2)) == 0){
+                        sql = "UPDATE SUBMISSION SET " + currentProblemID.charAt(1) + " = " + answerIsCorrect + " WHERE uid = '" + uid + "' AND ContestID = '" + contestID + "';";
+                        stmt.executeUpdate(sql);
+                    }
                 }
             }
-            if(answerIsCorrect){
-                JOptionPane.showMessageDialog(null, "Correct answer!");
-            }
-            else{
-                JOptionPane.showMessageDialog(null, "Wrong answer. Try again!");
-            }
-            
-            cmd = "rm -f a.out compareOutputs.txt compilationOutput.txt expectedOutput.txt userCode.c inputFile.txt outputFile.txt";
-            executeCommand(cmd);
         }
         catch(Exception e){
             JOptionPane.showMessageDialog(null, e.getMessage());
@@ -1869,6 +1981,44 @@ System.exit(0);        // TODO add your handling code here:
         }
     }//GEN-LAST:event_showPreviousContestsButtonActionPerformed
 
+    private void standingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_standingsButtonActionPerformed
+        standingsFrame.setVisible(true);
+        problemsFrame.dispose();
+    }//GEN-LAST:event_standingsButtonActionPerformed
+
+    private void standingsFrameWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_standingsFrameWindowActivated
+        tm6 = (DefaultTableModel)jTable6.getModel();
+        tm6.setRowCount(0);
+        try{
+            sql= "SELECT * FROM SUBMISSION WHERE ContestID = '" + contestID + "' AND A = 1 AND B = 1 AND C = 1;";
+            rs = stmt.executeQuery(sql);
+            while(rs.next()){
+                tm6.addRow(new Object [] {rs.getString("uid"), rs.getInt("A"), rs.getInt("B"), rs.getInt("C")});
+            }
+            sql= "SELECT * FROM SUBMISSION WHERE ContestID = '" + contestID + "' AND ((A = 1 AND B = 1) OR (B = 1 AND C = 1) or (A = 1 AND C = 1));";
+            rs = stmt.executeQuery(sql);
+            while(rs.next()){
+                tm6.addRow(new Object [] {rs.getString("uid"), rs.getInt("A"), rs.getInt("B"), rs.getInt("C")});
+            }
+            sql= "SELECT * FROM SUBMISSION WHERE ContestID = '" + contestID + "' AND (A = 1 OR B = 1 OR C = 1);";
+            while(rs.next()){
+                tm6.addRow(new Object [] {rs.getString("uid"), rs.getInt("A"), rs.getInt("B"), rs.getInt("C")});
+            }
+            sql= "SELECT * FROM SUBMISSION WHERE ContestID = '" + contestID + "' AND A = 0 AND B = 0 AND C = 0;";
+            while(rs.next()){
+                tm6.addRow(new Object [] {rs.getString("uid"), rs.getInt("A"), rs.getInt("B"), rs.getInt("C")});
+            }
+        }
+        catch(Exception e){
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+    }//GEN-LAST:event_standingsFrameWindowActivated
+
+    private void backToContestProblemsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backToContestProblemsButtonActionPerformed
+        problemsFrame.setVisible(true);
+        standingsFrame.dispose();
+    }//GEN-LAST:event_backToContestProblemsButtonActionPerformed
+
     /**
     * @param args the command line arguments
     */
@@ -1881,6 +2031,7 @@ System.exit(0);        // TODO add your handling code here:
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton backToContestProblemsButton;
     private javax.swing.JTextArea codeTextArea;
     private javax.swing.JFrame contestsFrame;
     private javax.swing.JButton createAccountButton;
@@ -1932,8 +2083,6 @@ System.exit(0);        // TODO add your handling code here:
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
@@ -1954,11 +2103,13 @@ System.exit(0);        // TODO add your handling code here:
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
     private javax.swing.JTable jTable4;
     private javax.swing.JTable jTable5;
+    private javax.swing.JTable jTable6;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
@@ -1982,6 +2133,8 @@ System.exit(0);        // TODO add your handling code here:
     private javax.swing.JButton signInButton;
     private javax.swing.JButton signUpButton;
     private javax.swing.JFrame solveProblemFrame;
+    private javax.swing.JButton standingsButton;
+    private javax.swing.JFrame standingsFrame;
     private javax.swing.JButton submitCodeButton;
     // End of variables declaration//GEN-END:variables
 

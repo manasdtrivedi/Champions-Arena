@@ -4,8 +4,12 @@
   <NonVisualComponents>
     <Container class="javax.swing.JFrame" name="createAccountFrame">
       <Properties>
+        <Property name="defaultCloseOperation" type="int" value="3"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[400, 300]"/>
+          <Dimension value="[1837, 1055]"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[1837, 1055]"/>
         </Property>
       </Properties>
       <Events>
@@ -25,31 +29,20 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="jComboBox2" pref="251" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="jPasswordField1" pref="251" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="jTextField1" pref="251" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="jTextField2" pref="251" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="jComboBox2" pref="1661" max="32767" attributes="0"/>
+                      <Component id="jPasswordField1" alignment="0" pref="1661" max="32767" attributes="0"/>
+                      <Component id="jTextField1" alignment="0" pref="1661" max="32767" attributes="0"/>
+                      <Component id="jTextField2" alignment="0" pref="1661" max="32767" attributes="0"/>
                   </Group>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="190" max="32767" attributes="0"/>
+                  <EmptySpace pref="1616" max="32767" attributes="0"/>
                   <Component id="jButton2" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="149" max="32767" attributes="0"/>
+                  <EmptySpace pref="1574" max="32767" attributes="0"/>
                   <Component id="createAccountButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
               </Group>
@@ -85,7 +78,7 @@
                       <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace pref="741" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -163,8 +156,12 @@
     </Container>
     <Container class="javax.swing.JFrame" name="loginFrame">
       <Properties>
+        <Property name="defaultCloseOperation" type="int" value="3"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[400, 300]"/>
+          <Dimension value="[1837, 1055]"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[1837, 1055]"/>
         </Property>
       </Properties>
 
@@ -189,7 +186,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jButton3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="166" max="32767" attributes="0"/>
+                          <EmptySpace pref="1592" max="32767" attributes="0"/>
                           <Component id="jButton4" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -212,7 +209,7 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="loginButton" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="99" max="32767" attributes="0"/>
+                  <EmptySpace pref="774" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton4" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -272,8 +269,9 @@
     </Container>
     <Container class="javax.swing.JFrame" name="dashboard">
       <Properties>
+        <Property name="defaultCloseOperation" type="int" value="3"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[400, 300]"/>
+          <Dimension value="[1837, 1055]"/>
         </Property>
       </Properties>
       <Events>
@@ -288,13 +286,13 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="161" max="-2" attributes="0"/>
                           <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="111" max="32767" attributes="0"/>
+                          <EmptySpace pref="1520" max="32767" attributes="0"/>
                           <Component id="jButton24" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jButton6" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="168" max="32767" attributes="0"/>
+                          <EmptySpace pref="1595" max="32767" attributes="0"/>
                           <Component id="jButton5" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -306,7 +304,7 @@
                       <Component id="jButton7" max="32767" attributes="1"/>
                       <Component id="jButton21" alignment="0" pref="93" max="32767" attributes="1"/>
                   </Group>
-                  <EmptySpace pref="163" max="32767" attributes="0"/>
+                  <EmptySpace pref="1599" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
                       <Component id="jButton16" alignment="0" max="32767" attributes="1"/>
                       <Component id="jButton8" alignment="0" max="32767" attributes="1"/>
@@ -336,7 +334,7 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jButton16" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="66" max="32767" attributes="0"/>
+                  <EmptySpace pref="767" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jButton5" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton6" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -430,8 +428,9 @@
     </Container>
     <Container class="javax.swing.JFrame" name="searchFrame">
       <Properties>
+        <Property name="defaultCloseOperation" type="int" value="3"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[700, 700]"/>
+          <Dimension value="[1837, 1055]"/>
         </Property>
       </Properties>
       <Events>
@@ -446,7 +445,7 @@
                       <Group type="103" alignment="1" groupAlignment="1" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jScrollPane1" pref="761" max="32767" attributes="0"/>
+                              <Component id="jScrollPane1" pref="1813" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
@@ -464,16 +463,16 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jComboBox1" pref="639" max="32767" attributes="0"/>
-                                  <Component id="jTextField5" pref="639" max="32767" attributes="0"/>
-                                  <Component id="jTextField4" alignment="1" pref="639" max="32767" attributes="0"/>
+                                  <Component id="jComboBox1" pref="1667" max="32767" attributes="0"/>
+                                  <Component id="jTextField5" pref="1667" max="32767" attributes="0"/>
+                                  <Component id="jTextField4" alignment="1" pref="1667" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField6" pref="595" max="32767" attributes="0"/>
+                              <Component id="jTextField6" pref="1604" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -489,7 +488,7 @@
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="732" max="32767" attributes="0"/>
+                  <EmptySpace pref="1789" max="32767" attributes="0"/>
                   <Component id="jButton11" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -518,7 +517,7 @@
                   <Component id="jButton9" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                   <Component id="jScrollPane1" min="-2" pref="267" max="-2" attributes="0"/>
-                  <EmptySpace pref="96" max="32767" attributes="0"/>
+                  <EmptySpace pref="470" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jTextField6" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -633,8 +632,12 @@
     </Container>
     <Container class="javax.swing.JFrame" name="requests">
       <Properties>
+        <Property name="defaultCloseOperation" type="int" value="3"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[600, 400]"/>
+          <Dimension value="[1837, 1055]"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[1837, 1055]"/>
         </Property>
       </Properties>
       <Events>
@@ -657,8 +660,8 @@
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jTextField8" pref="221" max="32767" attributes="1"/>
-                                      <Component id="jTextField7" alignment="0" pref="221" max="32767" attributes="1"/>
+                                      <Component id="jTextField8" pref="1552" max="32767" attributes="1"/>
+                                      <Component id="jTextField7" alignment="0" pref="1552" max="32767" attributes="1"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -692,7 +695,7 @@
                       <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton15" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="719" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jButton19" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton20" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -772,8 +775,12 @@
     </Container>
     <Container class="javax.swing.JFrame" name="friendsFrame">
       <Properties>
+        <Property name="defaultCloseOperation" type="int" value="3"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[400, 300]"/>
+          <Dimension value="[1837, 1055]"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[1837, 1055]"/>
         </Property>
       </Properties>
       <Events>
@@ -789,7 +796,7 @@
                       <Component id="jScrollPane3" alignment="0" min="-2" pref="375" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jButton17" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="172" max="32767" attributes="0"/>
+                          <EmptySpace pref="1598" max="32767" attributes="0"/>
                           <Component id="jButton18" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -802,7 +809,7 @@
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jScrollPane3" min="-2" pref="180" max="-2" attributes="0"/>
-                  <EmptySpace pref="77" max="32767" attributes="0"/>
+                  <EmptySpace pref="813" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jButton17" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton18" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -856,8 +863,9 @@
     </Container>
     <Container class="javax.swing.JFrame" name="profileFrame">
       <Properties>
+        <Property name="defaultCloseOperation" type="int" value="3"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[400, 300]"/>
+          <Dimension value="[1837, 1055]"/>
         </Property>
       </Properties>
       <Events>
@@ -875,11 +883,9 @@
                               <Component id="jLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel19" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel21" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel23" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jLabel24" max="32767" attributes="1"/>
                               <Component id="jLabel22" max="32767" attributes="1"/>
                               <Component id="jLabel20" max="32767" attributes="1"/>
                               <Component id="jLabel18" alignment="0" pref="204" max="32767" attributes="1"/>
@@ -887,7 +893,7 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jButton22" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="166" max="32767" attributes="0"/>
+                          <EmptySpace pref="1593" max="32767" attributes="0"/>
                           <Component id="jButton23" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -913,12 +919,7 @@
                       <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel23" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel24" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace pref="131" max="32767" attributes="0"/>
+                  <EmptySpace pref="903" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jButton22" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton23" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -959,16 +960,6 @@
             <Property name="text" type="java.lang.String" value="&lt;college&gt;"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel23">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Rating:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel24">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="&lt;rating&gt;"/>
-          </Properties>
-        </Component>
         <Component class="javax.swing.JButton" name="jButton22">
           <Properties>
             <Property name="text" type="java.lang.String" value="Go back to dashboard"/>
@@ -991,10 +982,7 @@
       <Properties>
         <Property name="defaultCloseOperation" type="int" value="3"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[700, 500]"/>
-        </Property>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[700, 500]"/>
+          <Dimension value="[1837, 1055]"/>
         </Property>
       </Properties>
       <Events>
@@ -1025,7 +1013,7 @@
                                   <Component id="showPreviousContestsButton" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="0" pref="37" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="1174" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -1042,7 +1030,7 @@
                       <Component id="showCurrentContestsButton" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="showPreviousContestsButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="63" max="32767" attributes="0"/>
+                  <EmptySpace pref="618" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jButton25" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton26" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1103,7 +1091,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="showPreviousContestsButton">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Previous Contests"/>
+            <Property name="text" type="java.lang.String" value="Past Contests"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="showPreviousContestsButtonActionPerformed"/>
@@ -1115,7 +1103,7 @@
       <Properties>
         <Property name="defaultCloseOperation" type="int" value="3"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[700, 500]"/>
+          <Dimension value="[1837, 1055]"/>
         </Property>
       </Properties>
       <Events>
@@ -1135,16 +1123,26 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
                   <Component id="jScrollPane4" min="-2" pref="384" max="-2" attributes="0"/>
-                  <EmptySpace pref="124" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
+                  <Component id="standingsButton" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="1153" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                  <Component id="jScrollPane4" min="-2" pref="210" max="-2" attributes="0"/>
-                  <EmptySpace pref="91" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="jScrollPane4" min="-2" pref="210" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="117" max="-2" attributes="0"/>
+                          <Component id="standingsButton" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="767" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jButton27" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton28" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1194,16 +1192,24 @@
             </Component>
           </SubComponents>
         </Container>
+        <Component class="javax.swing.JButton" name="standingsButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Standings"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="standingsButtonActionPerformed"/>
+          </Events>
+        </Component>
       </SubComponents>
     </Container>
     <Container class="javax.swing.JFrame" name="solveProblemFrame">
       <Properties>
         <Property name="defaultCloseOperation" type="int" value="3"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[700, 500]"/>
+          <Dimension value="[1837, 1055]"/>
         </Property>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[700, 500]"/>
+          <Dimension value="[1837, 1055]"/>
         </Property>
       </Properties>
       <Events>
@@ -1229,7 +1235,7 @@
                                   <Component id="jLabel28" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="problemLevelLabel" min="-2" pref="79" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="229" max="32767" attributes="0"/>
+                                  <EmptySpace min="0" pref="1366" max="32767" attributes="0"/>
                               </Group>
                               <Component id="problemTitleLabel" max="32767" attributes="0"/>
                           </Group>
@@ -1277,7 +1283,7 @@
                       <Group type="102" attributes="0">
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="submitCodeButton" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="18" max="32767" attributes="0"/>
+                          <EmptySpace pref="573" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="32767" attributes="0"/>
@@ -1385,11 +1391,87 @@
         </Component>
       </SubComponents>
     </Container>
+    <Container class="javax.swing.JFrame" name="standingsFrame">
+      <Properties>
+        <Property name="defaultCloseOperation" type="int" value="3"/>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[1837, 1055]"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[1837, 1055]"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="windowActivated" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="standingsFrameWindowActivated"/>
+      </Events>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="716" max="32767" attributes="0"/>
+                  <Component id="jScrollPane8" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="669" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="364" max="-2" attributes="0"/>
+                  <Component id="backToContestProblemsButton" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="316" max="32767" attributes="0"/>
+                  <Component id="jScrollPane8" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="120" max="-2" attributes="0"/>
+                  <Component id="backToContestProblemsButton" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="153" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane8">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="jTable6">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                  <Table columnCount="4" rowCount="0">
+                    <Column editable="true" title="User ID" type="java.lang.Object"/>
+                    <Column editable="true" title="A" type="java.lang.Object"/>
+                    <Column editable="true" title="B" type="java.lang.Object"/>
+                    <Column editable="true" title="C" type="java.lang.Object"/>
+                  </Table>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="backToContestProblemsButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Back to Contest Problems"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backToContestProblemsButtonActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[400, 300]"/>
+      <Dimension value="[1837, 1055]"/>
+    </Property>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[1837, 1055]"/>
     </Property>
   </Properties>
   <SyntheticProperties>
@@ -1414,31 +1496,34 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="122" max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="82" max="32767" attributes="0"/>
-              <Component id="signUpButton" min="-2" pref="102" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-              <Component id="signInButton" min="-2" pref="110" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="677" max="-2" attributes="0"/>
+                      <Component id="signUpButton" min="-2" pref="102" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="302" max="-2" attributes="0"/>
+                      <Component id="signInButton" min="-2" pref="110" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="807" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="646" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="414" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="211" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="signUpButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="signInButton" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="95" max="32767" attributes="0"/>
+              <EmptySpace pref="374" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

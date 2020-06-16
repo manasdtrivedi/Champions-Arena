@@ -14,8 +14,7 @@ CREATE TABLE USER
 uid varchar(40) PRIMARY KEY,
 uname varchar(40),
 passwd varchar(40),
-college varchar(100),
-rating int DEFAULT 1500
+college varchar(100)
 );
 
 
@@ -97,4 +96,15 @@ INSERT INTO TESTCASE VALUES('3A', 2, '3\n29 10\n5 1000\n0 1\n', '9\n5\n0\n');
 INSERT INTO TESTCASE VALUES('3B', 1, '5\n2\n3\n4\n5\n', 'YES\nYES\nNO\nYES\n');
 
 INSERT INTO TESTCASE VALUES('3B', 2, '5\n23\n29\n44\n55\n', 'YES\nYES\nNO\nNO\n');
+
+
+CREATE TABLE SUBMISSION
+(
+uid varchar(40) REFERENCES USER(uid),
+ContestID varchar(10) REFERENCES CONTEST(ID),
+A tinyint(4),
+B tinyint(4),
+C tinyint(4),
+PRIMARY KEY(uid, ContestID)
+);
 ```
