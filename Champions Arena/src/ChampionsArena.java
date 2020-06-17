@@ -1,3 +1,4 @@
+import java.awt.Font;
 import java.sql.*;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -146,7 +147,6 @@ public class ChampionsArena extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
         jComboBox2 = new javax.swing.JComboBox();
         loginFrame = new javax.swing.JFrame();
@@ -156,11 +156,9 @@ public class ChampionsArena extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         loginButton = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
         dashboard = new javax.swing.JFrame();
         jLabel7 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        logoutButton = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jButton13 = new javax.swing.JButton();
@@ -178,18 +176,17 @@ public class ChampionsArena extends javax.swing.JFrame {
         jTextField5 = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
         requests = new javax.swing.JFrame();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
         jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
         friendsFrame = new javax.swing.JFrame();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable3 = new javax.swing.JTable();
         jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
         profileFrame = new javax.swing.JFrame();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
@@ -198,21 +195,20 @@ public class ChampionsArena extends javax.swing.JFrame {
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jButton22 = new javax.swing.JButton();
-        jButton23 = new javax.swing.JButton();
         profileActionButton = new javax.swing.JButton();
         contestsFrame = new javax.swing.JFrame();
         jButton25 = new javax.swing.JButton();
-        jButton26 = new javax.swing.JButton();
         jScrollPane7 = new javax.swing.JScrollPane();
         jTable5 = new javax.swing.JTable();
         showCurrentContestsButton = new javax.swing.JButton();
         showPreviousContestsButton = new javax.swing.JButton();
+        jLabel16 = new javax.swing.JLabel();
         problemsFrame = new javax.swing.JFrame();
         jButton27 = new javax.swing.JButton();
-        jButton28 = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTable4 = new javax.swing.JTable();
         standingsButton = new javax.swing.JButton();
+        jLabel23 = new javax.swing.JLabel();
         solveProblemFrame = new javax.swing.JFrame();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
@@ -231,148 +227,163 @@ public class ChampionsArena extends javax.swing.JFrame {
         jScrollPane8 = new javax.swing.JScrollPane();
         jTable6 = new javax.swing.JTable();
         backToContestProblemsButton = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
         signUpButton = new javax.swing.JButton();
         signInButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         createAccountFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         createAccountFrame.setMinimumSize(new java.awt.Dimension(1837, 1055));
-        createAccountFrame.setPreferredSize(new java.awt.Dimension(1837, 1055));
         createAccountFrame.addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 createAccountFrameWindowActivated(evt);
             }
         });
 
+        jLabel2.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jLabel2.setText("Enter username:");
 
+        jTextField1.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
 
+        jLabel3.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jLabel3.setText("Enter password:");
 
+        jPasswordField1.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jPasswordField1ActionPerformed(evt);
             }
         });
 
-        createAccountButton.setText("Create Account");
+        createAccountButton.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
+        createAccountButton.setText("<html><div style=\"color:#0f8ec7;\">Create Account</div></html>");
         createAccountButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 createAccountButtonActionPerformed(evt);
             }
         });
 
+        jLabel4.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jLabel4.setText("Enter name:");
 
+        jTextField2.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
             }
         });
 
-        jButton1.setText("Go back to homepage");
+        jButton1.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+        jButton1.setText("Back");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Exit");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
+        jLabel13.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jLabel13.setText("Enter college:");
 
+        jComboBox2.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "--Select college--" }));
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout createAccountFrameLayout = new javax.swing.GroupLayout(createAccountFrame.getContentPane());
         createAccountFrame.getContentPane().setLayout(createAccountFrameLayout);
         createAccountFrameLayout.setHorizontalGroup(
             createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(createAccountFrameLayout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel13))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox2, 0, 1661, Short.MAX_VALUE)
-                    .addComponent(jPasswordField1, javax.swing.GroupLayout.DEFAULT_SIZE, 1661, Short.MAX_VALUE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 1661, Short.MAX_VALUE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 1661, Short.MAX_VALUE))
-                .addContainerGap())
-            .addGroup(createAccountFrameLayout.createSequentialGroup()
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1616, Short.MAX_VALUE)
-                .addComponent(jButton2))
+                    .addGroup(createAccountFrameLayout.createSequentialGroup()
+                        .addGap(390, 390, 390)
+                        .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(18, 18, 18)
+                        .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 819, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jPasswordField1)
+                                .addComponent(jTextField1)
+                                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 819, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(createAccountFrameLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(429, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, createAccountFrameLayout.createSequentialGroup()
-                .addContainerGap(1574, Short.MAX_VALUE)
-                .addComponent(createAccountButton)
-                .addGap(132, 132, 132))
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(createAccountButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(753, 753, 753))
         );
         createAccountFrameLayout.setVerticalGroup(
             createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(createAccountFrameLayout.createSequentialGroup()
                 .addContainerGap()
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 183, Short.MAX_VALUE)
                 .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
-                .addGap(18, 18, 18)
+                .addGap(44, 44, 44)
                 .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2))
-                .addGap(18, 18, 18)
+                .addGap(44, 44, 44)
                 .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
-                .addGap(18, 18, 18)
+                .addGap(44, 44, 44)
                 .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel13))
-                .addGap(18, 18, 18)
-                .addComponent(createAccountButton)
-                .addGap(18, 18, 18)
-                .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addContainerGap(741, Short.MAX_VALUE))
+                .addGap(97, 97, 97)
+                .addComponent(createAccountButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(298, 298, 298))
         );
 
         loginFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         loginFrame.setBackground(new java.awt.Color(0, 184, 255));
         loginFrame.setForeground(new java.awt.Color(214, 49, 49));
         loginFrame.setMinimumSize(new java.awt.Dimension(1837, 1055));
-        loginFrame.setPreferredSize(new java.awt.Dimension(1837, 1055));
+        loginFrame.addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowActivated(java.awt.event.WindowEvent evt) {
+                loginFrameWindowActivated(evt);
+            }
+        });
 
+        jLabel5.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jLabel5.setText("Enter username:");
 
+        jTextField3.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);
             }
         });
 
+        jPasswordField2.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jPasswordField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jPasswordField2ActionPerformed(evt);
             }
         });
 
+        jLabel6.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jLabel6.setText("Enter password:");
 
-        loginButton.setBackground(new java.awt.Color(254, 254, 254));
-        loginButton.setFont(new java.awt.Font("Liberation Serif", 0, 18)); // NOI18N
-        loginButton.setText("<html><div style=\"color:#0f8ec7;font-size:18px;\">Login</div></html>");
+        loginButton.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
+        loginButton.setText("<html><div style=\"color:#0f8ec7;\">Login</div></html>");
         loginButton.setActionCommand("<html><b>Login</b></html>");
         loginButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -380,17 +391,11 @@ public class ChampionsArena extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("Go back to homepage");
+        jButton3.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+        jButton3.setText("Back");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
-            }
-        });
-
-        jButton4.setText("Exit");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
             }
         });
 
@@ -399,44 +404,40 @@ public class ChampionsArena extends javax.swing.JFrame {
         loginFrameLayout.setHorizontalGroup(
             loginFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(loginFrameLayout.createSequentialGroup()
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 1737, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loginFrameLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(loginFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(loginFrameLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1592, Short.MAX_VALUE)
-                        .addComponent(jButton4))
-                    .addGroup(loginFrameLayout.createSequentialGroup()
-                        .addGap(41, 41, 41)
-                        .addGroup(loginFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(loginFrameLayout.createSequentialGroup()
-                                .addGroup(loginFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel6))
-                                .addGap(18, 18, 18)
-                                .addGroup(loginFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jPasswordField2, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE))))))
-                .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loginFrameLayout.createSequentialGroup()
+                        .addGroup(loginFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(loginFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jPasswordField2, javax.swing.GroupLayout.DEFAULT_SIZE, 567, Short.MAX_VALUE)
+                            .addComponent(jTextField3)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loginFrameLayout.createSequentialGroup()
+                        .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(261, 261, 261)))
+                .addGap(493, 493, 493))
         );
         loginFrameLayout.setVerticalGroup(
             loginFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(loginFrameLayout.createSequentialGroup()
-                .addGap(58, 58, 58)
+                .addContainerGap()
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 328, Short.MAX_VALUE)
                 .addGroup(loginFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(37, 37, 37)
                 .addGroup(loginFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jPasswordField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6))
-                .addGap(18, 18, 18)
+                    .addComponent(jPasswordField2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(136, 136, 136)
                 .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 796, Short.MAX_VALUE)
-                .addGroup(loginFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4))
-                .addContainerGap())
+                .addGap(312, 312, 312))
         );
 
         dashboard.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -447,30 +448,26 @@ public class ChampionsArena extends javax.swing.JFrame {
             }
         });
 
+        jLabel7.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
         jLabel7.setText("Dashboard");
 
-        jButton5.setText("Exit");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        logoutButton.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+        logoutButton.setText("Logout");
+        logoutButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                logoutButtonActionPerformed(evt);
             }
         });
 
-        jButton6.setText("Go back to login page");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-
+        jButton7.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jButton7.setText("Contests");
-        jButton7.setBorder(new javax.swing.border.MatteBorder(null));
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
 
+        jButton8.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jButton8.setText("Search");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -478,6 +475,7 @@ public class ChampionsArena extends javax.swing.JFrame {
             }
         });
 
+        jButton13.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jButton13.setText("Requests");
         jButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -485,6 +483,7 @@ public class ChampionsArena extends javax.swing.JFrame {
             }
         });
 
+        jButton16.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jButton16.setText("Friends");
         jButton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -492,6 +491,7 @@ public class ChampionsArena extends javax.swing.JFrame {
             }
         });
 
+        jButton21.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jButton21.setText("Problems");
         jButton21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -499,10 +499,9 @@ public class ChampionsArena extends javax.swing.JFrame {
             }
         });
 
-        jButton24.setText("jButton24");
+        jButton24.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+        jButton24.setText("Your profile");
         jButton24.setToolTipText("Go to your profile");
-        jButton24.setBorder(null);
-        jButton24.setBorderPainted(false);
         jButton24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton24ActionPerformed(evt);
@@ -514,52 +513,43 @@ public class ChampionsArena extends javax.swing.JFrame {
         dashboardLayout.setHorizontalGroup(
             dashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(dashboardLayout.createSequentialGroup()
-                .addGroup(dashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(dashboardLayout.createSequentialGroup()
-                        .addGap(161, 161, 161)
-                        .addComponent(jLabel7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1520, Short.MAX_VALUE)
-                        .addComponent(jButton24))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dashboardLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1595, Short.MAX_VALUE)
-                        .addComponent(jButton5)))
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dashboardLayout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addGroup(dashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton21, javax.swing.GroupLayout.DEFAULT_SIZE, 93, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1599, Short.MAX_VALUE)
-                .addGroup(dashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jButton16, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton13, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(31, 31, 31))
+                .addGap(221, 221, 221)
+                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(79, 79, 79)
+                .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(79, 79, 79)
+                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(79, 79, 79)
+                .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(79, 79, 79)
+                .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 275, Short.MAX_VALUE))
+            .addGroup(dashboardLayout.createSequentialGroup()
+                .addGap(802, 802, 802)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(52, 52, 52)
+                .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(22, 22, 22))
         );
         dashboardLayout.setVerticalGroup(
             dashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(dashboardLayout.createSequentialGroup()
-                .addGap(34, 34, 34)
+                .addGap(160, 160, 160)
                 .addGroup(dashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(jButton24))
-                .addGap(36, 36, 36)
-                .addGroup(dashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8))
-                .addGap(18, 18, 18)
-                .addGroup(dashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton13)
-                    .addComponent(jButton21))
-                .addGap(18, 18, 18)
-                .addComponent(jButton16)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 767, Short.MAX_VALUE)
-                .addGroup(dashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton5)
-                    .addComponent(jButton6))
-                .addContainerGap())
+                    .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(215, 215, 215)
+                .addGroup(dashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(dashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(518, Short.MAX_VALUE))
         );
 
         searchFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -570,8 +560,10 @@ public class ChampionsArena extends javax.swing.JFrame {
             }
         });
 
+        jLabel8.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jLabel8.setText("Search users based on:");
 
+        jButton9.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jButton9.setText("Search");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -579,12 +571,22 @@ public class ChampionsArena extends javax.swing.JFrame {
             }
         });
 
+        jLabel9.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jLabel9.setText("User name:");
 
+        jTextField4.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+
+        jLabel10.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jLabel10.setText("College name:");
 
+        jComboBox1.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+
+        jLabel11.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jLabel11.setText("Name:");
 
+        jTextField5.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+
+        jTable1.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -593,6 +595,10 @@ public class ChampionsArena extends javax.swing.JFrame {
                 "User name", "Name", "College"
             }
         ));
+        jTable1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTable1.setRowHeight(30);
+        jTable1.setShowHorizontalLines(false);
+        jTable1.setShowVerticalLines(false);
         jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTable1MouseClicked(evt);
@@ -600,14 +606,8 @@ public class ChampionsArena extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        jButton11.setText("Exit");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
-            }
-        });
-
-        jButton12.setText("Return to Dashboard");
+        jButton12.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+        jButton12.setText("Back");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton12ActionPerformed(evt);
@@ -619,76 +619,70 @@ public class ChampionsArena extends javax.swing.JFrame {
         searchFrameLayout.setHorizontalGroup(
             searchFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(searchFrameLayout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(searchFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(searchFrameLayout.createSequentialGroup()
+                        .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(201, 201, 201)
+                        .addComponent(jLabel8)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, searchFrameLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1813, Short.MAX_VALUE))
-                    .addGroup(searchFrameLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel8))
-                    .addGroup(searchFrameLayout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addGroup(searchFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel11)
-                            .addGroup(searchFrameLayout.createSequentialGroup()
-                                .addComponent(jLabel10)
-                                .addGap(4, 4, 4)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(searchFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jComboBox1, 0, 1667, Short.MAX_VALUE)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.DEFAULT_SIZE, 1667, Short.MAX_VALUE)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1667, Short.MAX_VALUE)))
-                    .addGroup(searchFrameLayout.createSequentialGroup()
-                        .addGroup(searchFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(searchFrameLayout.createSequentialGroup()
-                                .addGap(353, 353, 353)
-                                .addComponent(jButton9))
-                            .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1813, Short.MAX_VALUE)
+                        .addContainerGap())))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, searchFrameLayout.createSequentialGroup()
-                .addContainerGap(1789, Short.MAX_VALUE)
-                .addComponent(jButton11))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(808, 808, 808))
+            .addGroup(searchFrameLayout.createSequentialGroup()
+                .addGap(368, 368, 368)
+                .addGroup(searchFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel9)
+                    .addGroup(searchFrameLayout.createSequentialGroup()
+                        .addComponent(jLabel10)
+                        .addGap(4, 4, 4)))
+                .addGap(92, 92, 92)
+                .addGroup(searchFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jTextField5, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jComboBox1, 0, 788, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         searchFrameLayout.setVerticalGroup(
             searchFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(searchFrameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(searchFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(searchFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel11))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(searchFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton9)
-                .addGap(29, 29, 29)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 510, Short.MAX_VALUE)
                 .addGroup(searchFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(searchFrameLayout.createSequentialGroup()
-                        .addComponent(jButton12)
-                        .addGap(11, 11, 11))
-                    .addComponent(jButton11)))
+                    .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
+                .addGroup(searchFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(35, 35, 35)
+                .addGroup(searchFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel11))
+                .addGap(35, 35, 35)
+                .addGroup(searchFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10))
+                .addGap(69, 69, 69)
+                .addComponent(jButton9)
+                .addGap(74, 74, 74)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 467, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         requests.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         requests.setMinimumSize(new java.awt.Dimension(1837, 1055));
-        requests.setPreferredSize(new java.awt.Dimension(1837, 1055));
         requests.addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 requestsWindowActivated(evt);
             }
         });
 
+        jTable2.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -697,6 +691,9 @@ public class ChampionsArena extends javax.swing.JFrame {
                 "User name", "Name", "College"
             }
         ));
+        jTable2.setRowHeight(30);
+        jTable2.setShowHorizontalLines(false);
+        jTable2.setShowVerticalLines(false);
         jTable2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTable2MouseClicked(evt);
@@ -704,19 +701,16 @@ public class ChampionsArena extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(jTable2);
 
-        jButton19.setText("Go to Dashboard");
+        jButton19.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+        jButton19.setText("Back");
         jButton19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton19ActionPerformed(evt);
             }
         });
 
-        jButton20.setText("Exit");
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
-            }
-        });
+        jLabel12.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
+        jLabel12.setText("Connection Requests");
 
         javax.swing.GroupLayout requestsLayout = new javax.swing.GroupLayout(requests.getContentPane());
         requests.getContentPane().setLayout(requestsLayout);
@@ -726,31 +720,36 @@ public class ChampionsArena extends javax.swing.JFrame {
                 .addGroup(requestsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(requestsLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton19))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1402, Short.MAX_VALUE)
-                .addComponent(jButton20))
+                        .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(requestsLayout.createSequentialGroup()
+                        .addGap(265, 265, 265)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 1308, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(requestsLayout.createSequentialGroup()
+                        .addGap(743, 743, 743)
+                        .addComponent(jLabel12)))
+                .addGap(0, 264, Short.MAX_VALUE))
         );
         requestsLayout.setVerticalGroup(
             requestsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(requestsLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 844, Short.MAX_VALUE)
-                .addGroup(requestsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton19)
-                    .addComponent(jButton20)))
+                .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel12)
+                .addGap(54, 54, 54)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 660, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(199, Short.MAX_VALUE))
         );
 
         friendsFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         friendsFrame.setMinimumSize(new java.awt.Dimension(1837, 1055));
-        friendsFrame.setPreferredSize(new java.awt.Dimension(1837, 1055));
         friendsFrame.addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 friendsFrameWindowActivated(evt);
             }
         });
 
+        jTable3.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -759,6 +758,9 @@ public class ChampionsArena extends javax.swing.JFrame {
                 "User name", "Name", "College"
             }
         ));
+        jTable3.setRowHeight(30);
+        jTable3.setShowHorizontalLines(false);
+        jTable3.setShowVerticalLines(false);
         jTable3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTable3MouseClicked(evt);
@@ -766,44 +768,44 @@ public class ChampionsArena extends javax.swing.JFrame {
         });
         jScrollPane3.setViewportView(jTable3);
 
-        jButton17.setText("Return to Dashboard");
+        jButton17.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+        jButton17.setText("Back");
         jButton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton17ActionPerformed(evt);
             }
         });
 
-        jButton18.setText("Exit");
-        jButton18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton18ActionPerformed(evt);
-            }
-        });
+        jLabel14.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
+        jLabel14.setText("Friends");
 
         javax.swing.GroupLayout friendsFrameLayout = new javax.swing.GroupLayout(friendsFrame.getContentPane());
         friendsFrame.getContentPane().setLayout(friendsFrameLayout);
         friendsFrameLayout.setHorizontalGroup(
             friendsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(friendsFrameLayout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(friendsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(friendsFrameLayout.createSequentialGroup()
-                        .addComponent(jButton17)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1599, Short.MAX_VALUE)
-                        .addComponent(jButton18)))
-                .addContainerGap())
+                        .addContainerGap()
+                        .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(friendsFrameLayout.createSequentialGroup()
+                        .addGap(260, 260, 260)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 1306, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(friendsFrameLayout.createSequentialGroup()
+                        .addGap(853, 853, 853)
+                        .addComponent(jLabel14)))
+                .addContainerGap(271, Short.MAX_VALUE))
         );
         friendsFrameLayout.setVerticalGroup(
             friendsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, friendsFrameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 813, Short.MAX_VALUE)
-                .addGroup(friendsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton17)
-                    .addComponent(jButton18))
-                .addContainerGap())
+                .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32)
+                .addComponent(jLabel14)
+                .addGap(50, 50, 50)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 519, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(175, Short.MAX_VALUE))
         );
 
         profileFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -814,32 +816,33 @@ public class ChampionsArena extends javax.swing.JFrame {
             }
         });
 
+        jLabel17.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
         jLabel17.setText("Username:");
 
+        jLabel18.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
         jLabel18.setText("<username>");
 
+        jLabel19.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
         jLabel19.setText("Name:");
 
+        jLabel20.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
         jLabel20.setText("<name>");
 
+        jLabel21.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
         jLabel21.setText("College:");
 
+        jLabel22.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
         jLabel22.setText("<college>");
 
-        jButton22.setText("Go back to dashboard");
+        jButton22.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+        jButton22.setText("Back");
         jButton22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton22ActionPerformed(evt);
             }
         });
 
-        jButton23.setText("Exit");
-        jButton23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton23ActionPerformed(evt);
-            }
-        });
-
+        profileActionButton.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
         profileActionButton.setText("Profile Action");
         profileActionButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -853,49 +856,47 @@ public class ChampionsArena extends javax.swing.JFrame {
             profileFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(profileFrameLayout.createSequentialGroup()
                 .addContainerGap()
+                .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, profileFrameLayout.createSequentialGroup()
+                .addContainerGap(745, Short.MAX_VALUE)
                 .addGroup(profileFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(profileFrameLayout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, profileFrameLayout.createSequentialGroup()
                         .addGroup(profileFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel17)
-                            .addComponent(jLabel19)
-                            .addComponent(jLabel21))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel21, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(47, 47, 47)
                         .addGroup(profileFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)))
-                    .addGroup(profileFrameLayout.createSequentialGroup()
-                        .addComponent(jButton22)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1593, Short.MAX_VALUE)
-                        .addComponent(jButton23)))
-                .addContainerGap())
-            .addGroup(profileFrameLayout.createSequentialGroup()
-                .addGap(127, 127, 127)
-                .addComponent(profileActionButton)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, profileFrameLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(profileActionButton)
+                        .addGap(81, 81, 81)))
+                .addGap(666, 666, 666))
         );
         profileFrameLayout.setVerticalGroup(
             profileFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(profileFrameLayout.createSequentialGroup()
                 .addContainerGap()
+                .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(228, 228, 228)
                 .addGroup(profileFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel17)
                     .addComponent(jLabel18))
-                .addGap(18, 18, 18)
+                .addGap(60, 60, 60)
                 .addGroup(profileFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel19)
                     .addComponent(jLabel20))
-                .addGap(18, 18, 18)
+                .addGap(61, 61, 61)
                 .addGroup(profileFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel21)
                     .addComponent(jLabel22))
-                .addGap(67, 67, 67)
+                .addGap(106, 106, 106)
                 .addComponent(profileActionButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 798, Short.MAX_VALUE)
-                .addGroup(profileFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton22)
-                    .addComponent(jButton23))
-                .addContainerGap())
+                .addContainerGap(330, Short.MAX_VALUE))
         );
 
         contestsFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -906,20 +907,15 @@ public class ChampionsArena extends javax.swing.JFrame {
             }
         });
 
-        jButton25.setText("Back to dashboard");
+        jButton25.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+        jButton25.setText("Back");
         jButton25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton25ActionPerformed(evt);
             }
         });
 
-        jButton26.setText("Exit");
-        jButton26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton26ActionPerformed(evt);
-            }
-        });
-
+        jTable5.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jTable5.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -928,6 +924,9 @@ public class ChampionsArena extends javax.swing.JFrame {
                 "ID ", "Name", "Start", "End"
             }
         ));
+        jTable5.setRowHeight(30);
+        jTable5.setShowHorizontalLines(false);
+        jTable5.setShowVerticalLines(false);
         jTable5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTable5MouseClicked(evt);
@@ -935,6 +934,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         });
         jScrollPane7.setViewportView(jTable5);
 
+        showCurrentContestsButton.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         showCurrentContestsButton.setText("Current Contests");
         showCurrentContestsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -942,12 +942,16 @@ public class ChampionsArena extends javax.swing.JFrame {
             }
         });
 
+        showPreviousContestsButton.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         showPreviousContestsButton.setText("Past Contests");
         showPreviousContestsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 showPreviousContestsButtonActionPerformed(evt);
             }
         });
+
+        jLabel16.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
+        jLabel16.setText("Contests");
 
         javax.swing.GroupLayout contestsFrameLayout = new javax.swing.GroupLayout(contestsFrame.getContentPane());
         contestsFrame.getContentPane().setLayout(contestsFrameLayout);
@@ -957,36 +961,36 @@ public class ChampionsArena extends javax.swing.JFrame {
                 .addGroup(contestsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(contestsFrameLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jButton25)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton26))
+                        .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(contestsFrameLayout.createSequentialGroup()
-                        .addGroup(contestsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(contestsFrameLayout.createSequentialGroup()
-                                .addGap(38, 38, 38)
-                                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 613, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(contestsFrameLayout.createSequentialGroup()
-                                .addGap(147, 147, 147)
-                                .addComponent(showCurrentContestsButton)
-                                .addGap(125, 125, 125)
-                                .addComponent(showPreviousContestsButton)))
-                        .addGap(0, 1174, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addGap(844, 844, 844)
+                        .addComponent(jLabel16)))
+                .addContainerGap(849, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, contestsFrameLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 1319, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(258, 258, 258))
+            .addGroup(contestsFrameLayout.createSequentialGroup()
+                .addGap(658, 658, 658)
+                .addComponent(showCurrentContestsButton)
+                .addGap(96, 96, 96)
+                .addComponent(showPreviousContestsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         contestsFrameLayout.setVerticalGroup(
             contestsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, contestsFrameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(48, 48, 48)
+                .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(22, 22, 22)
+                .addComponent(jLabel16)
+                .addGap(74, 74, 74)
                 .addGroup(contestsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(showCurrentContestsButton)
                     .addComponent(showPreviousContestsButton))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 618, Short.MAX_VALUE)
-                .addGroup(contestsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton25)
-                    .addComponent(jButton26))
-                .addContainerGap())
+                .addGap(53, 53, 53)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(199, Short.MAX_VALUE))
         );
 
         problemsFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -997,20 +1001,15 @@ public class ChampionsArena extends javax.swing.JFrame {
             }
         });
 
-        jButton27.setText("Back to dashboard");
+        jButton27.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+        jButton27.setText("Back");
         jButton27.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton27ActionPerformed(evt);
             }
         });
 
-        jButton28.setText("Exit");
-        jButton28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton28ActionPerformed(evt);
-            }
-        });
-
+        jTable4.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jTable4.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -1019,6 +1018,9 @@ public class ChampionsArena extends javax.swing.JFrame {
                 "ID", "Title", "Level"
             }
         ));
+        jTable4.setRowHeight(30);
+        jTable4.setShowHorizontalLines(false);
+        jTable4.setShowVerticalLines(false);
         jTable4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTable4MouseClicked(evt);
@@ -1026,6 +1028,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         });
         jScrollPane4.setViewportView(jTable4);
 
+        standingsButton.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         standingsButton.setText("Standings");
         standingsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1033,72 +1036,80 @@ public class ChampionsArena extends javax.swing.JFrame {
             }
         });
 
+        jLabel23.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
+        jLabel23.setText("Problem Set");
+
         javax.swing.GroupLayout problemsFrameLayout = new javax.swing.GroupLayout(problemsFrame.getContentPane());
         problemsFrame.getContentPane().setLayout(problemsFrameLayout);
         problemsFrameLayout.setHorizontalGroup(
             problemsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(problemsFrameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton27)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton28)
-                .addContainerGap())
-            .addGroup(problemsFrameLayout.createSequentialGroup()
-                .addGap(111, 111, 111)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 384, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(99, 99, 99)
-                .addComponent(standingsButton)
-                .addContainerGap(1153, Short.MAX_VALUE))
+                .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, problemsFrameLayout.createSequentialGroup()
+                .addContainerGap(424, Short.MAX_VALUE)
+                .addGroup(problemsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(problemsFrameLayout.createSequentialGroup()
+                        .addComponent(jLabel23)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(standingsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 1023, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(390, 390, 390))
         );
         problemsFrameLayout.setVerticalGroup(
             problemsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, problemsFrameLayout.createSequentialGroup()
-                .addGroup(problemsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(problemsFrameLayout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(problemsFrameLayout.createSequentialGroup()
-                        .addGap(117, 117, 117)
-                        .addComponent(standingsButton)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 767, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(17, 17, 17)
                 .addGroup(problemsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton27)
-                    .addComponent(jButton28))
-                .addContainerGap())
+                    .addComponent(jLabel23)
+                    .addComponent(standingsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(37, 37, 37)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 554, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(293, Short.MAX_VALUE))
         );
 
         solveProblemFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         solveProblemFrame.setMinimumSize(new java.awt.Dimension(1837, 1055));
-        solveProblemFrame.setPreferredSize(new java.awt.Dimension(1837, 1055));
         solveProblemFrame.addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 solveProblemFrameWindowActivated(evt);
             }
         });
 
+        jLabel25.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jLabel25.setText("Problem ID:");
 
+        jLabel26.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jLabel26.setText("Title:");
 
         problemIDLabel.setBackground(java.awt.Color.white);
+        problemIDLabel.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         problemIDLabel.setOpaque(true);
 
         problemTitleLabel.setBackground(java.awt.Color.white);
+        problemTitleLabel.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         problemTitleLabel.setOpaque(true);
 
         problemStatementTextArea.setEditable(false);
         problemStatementTextArea.setColumns(20);
+        problemStatementTextArea.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         problemStatementTextArea.setLineWrap(true);
         problemStatementTextArea.setRows(5);
         problemStatementTextArea.setWrapStyleWord(true);
         jScrollPane5.setViewportView(problemStatementTextArea);
 
+        jLabel27.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jLabel27.setText("Enter your code here:");
 
         codeTextArea.setColumns(20);
+        codeTextArea.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
         codeTextArea.setRows(5);
         jScrollPane6.setViewportView(codeTextArea);
 
+        submitCodeButton.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         submitCodeButton.setText("Submit Code");
         submitCodeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1106,12 +1117,15 @@ public class ChampionsArena extends javax.swing.JFrame {
             }
         });
 
+        jLabel28.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jLabel28.setText("Level:");
 
         problemLevelLabel.setBackground(java.awt.Color.white);
+        problemLevelLabel.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         problemLevelLabel.setOpaque(true);
 
-        jButton29.setText("Back to Problems");
+        jButton29.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+        jButton29.setText("Back");
         jButton29.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton29ActionPerformed(evt);
@@ -1123,73 +1137,72 @@ public class ChampionsArena extends javax.swing.JFrame {
         solveProblemFrameLayout.setHorizontalGroup(
             solveProblemFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(solveProblemFrameLayout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(solveProblemFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(solveProblemFrameLayout.createSequentialGroup()
-                        .addGroup(solveProblemFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel25)
-                            .addComponent(jLabel26))
-                        .addGap(18, 18, 18)
+                        .addGap(236, 236, 236)
                         .addGroup(solveProblemFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(solveProblemFrameLayout.createSequentialGroup()
-                                .addComponent(problemIDLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(129, 129, 129)
-                                .addComponent(jLabel28)
+                                .addGroup(solveProblemFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel25)
+                                    .addComponent(jLabel26))
                                 .addGap(18, 18, 18)
-                                .addComponent(problemLevelLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 1366, Short.MAX_VALUE))
-                            .addComponent(problemTitleLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addComponent(jScrollPane5)
-                    .addComponent(jScrollPane6)
+                                .addGroup(solveProblemFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(solveProblemFrameLayout.createSequentialGroup()
+                                        .addComponent(problemIDLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(96, 96, 96)
+                                        .addComponent(jLabel28)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(problemLevelLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(problemTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 1216, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(solveProblemFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jScrollPane6, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel27, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jScrollPane5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 1363, Short.MAX_VALUE))))
                     .addGroup(solveProblemFrameLayout.createSequentialGroup()
-                        .addGroup(solveProblemFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel27)
-                            .addGroup(solveProblemFrameLayout.createSequentialGroup()
-                                .addComponent(jButton29)
-                                .addGap(132, 132, 132)
-                                .addComponent(submitCodeButton)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addContainerGap()
+                        .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(solveProblemFrameLayout.createSequentialGroup()
+                        .addGap(807, 807, 807)
+                        .addComponent(submitCodeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(238, Short.MAX_VALUE))
         );
         solveProblemFrameLayout.setVerticalGroup(
             solveProblemFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(solveProblemFrameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(solveProblemFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel25)
-                    .addComponent(problemIDLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel28)
-                    .addComponent(problemLevelLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(solveProblemFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel26)
-                    .addComponent(problemTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(38, 38, 38)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addComponent(jLabel27)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(solveProblemFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(72, 72, 72)
+                .addGroup(solveProblemFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(solveProblemFrameLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(submitCodeButton)
-                        .addContainerGap(573, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, solveProblemFrameLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton29)
-                        .addContainerGap())))
+                        .addGroup(solveProblemFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(solveProblemFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(problemIDLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel28, javax.swing.GroupLayout.Alignment.TRAILING))
+                            .addComponent(problemLevelLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(58, 58, 58)
+                        .addComponent(jLabel26))
+                    .addComponent(problemTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(58, 58, 58)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(66, 66, 66)
+                .addComponent(jLabel27)
+                .addGap(32, 32, 32)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
+                .addComponent(submitCodeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32))
         );
 
         standingsFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         standingsFrame.setMinimumSize(new java.awt.Dimension(1837, 1055));
-        standingsFrame.setPreferredSize(new java.awt.Dimension(1837, 1055));
         standingsFrame.addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 standingsFrameWindowActivated(evt);
             }
         });
 
+        jTable6.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jTable6.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -1198,6 +1211,9 @@ public class ChampionsArena extends javax.swing.JFrame {
                 "User ID", "A", "B", "C"
             }
         ));
+        jTable6.setRowHeight(30);
+        jTable6.setShowHorizontalLines(false);
+        jTable6.setShowVerticalLines(false);
         jTable6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTable6MouseClicked(evt);
@@ -1205,45 +1221,57 @@ public class ChampionsArena extends javax.swing.JFrame {
         });
         jScrollPane8.setViewportView(jTable6);
 
-        backToContestProblemsButton.setText("Back to Contest Problems");
+        backToContestProblemsButton.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+        backToContestProblemsButton.setText("Back");
         backToContestProblemsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backToContestProblemsButtonActionPerformed(evt);
             }
         });
 
+        jLabel15.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
+        jLabel15.setText("Standings - R1");
+
         javax.swing.GroupLayout standingsFrameLayout = new javax.swing.GroupLayout(standingsFrame.getContentPane());
         standingsFrame.getContentPane().setLayout(standingsFrameLayout);
         standingsFrameLayout.setHorizontalGroup(
             standingsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, standingsFrameLayout.createSequentialGroup()
-                .addContainerGap(716, Short.MAX_VALUE)
-                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(669, 669, 669))
             .addGroup(standingsFrameLayout.createSequentialGroup()
-                .addGap(364, 364, 364)
-                .addComponent(backToContestProblemsButton)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(standingsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(standingsFrameLayout.createSequentialGroup()
+                        .addComponent(backToContestProblemsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, standingsFrameLayout.createSequentialGroup()
+                        .addGap(0, 247, Short.MAX_VALUE)
+                        .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 1337, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(259, 259, 259))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, standingsFrameLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel15)
+                .addGap(805, 805, 805))
         );
         standingsFrameLayout.setVerticalGroup(
             standingsFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, standingsFrameLayout.createSequentialGroup()
-                .addContainerGap(316, Short.MAX_VALUE)
-                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(120, 120, 120)
-                .addComponent(backToContestProblemsButton)
-                .addGap(153, 153, 153))
+                .addContainerGap()
+                .addComponent(backToContestProblemsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 130, Short.MAX_VALUE)
+                .addComponent(jLabel15)
+                .addGap(62, 62, 62)
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 539, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(200, 200, 200))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1837, 1055));
-        setPreferredSize(new java.awt.Dimension(1837, 1055));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 formWindowActivated(evt);
             }
         });
 
+        signUpButton.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
         signUpButton.setText("Register");
         signUpButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1251,6 +1279,7 @@ public class ChampionsArena extends javax.swing.JFrame {
             }
         });
 
+        signInButton.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
         signInButton.setText("Login");
         signInButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1258,34 +1287,35 @@ public class ChampionsArena extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Ubuntu", 0, 48)); // NOI18N
         jLabel1.setText("Welcome to Champions Arena!");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(630, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(677, 677, 677)
-                        .addComponent(signUpButton, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(302, 302, 302)
-                        .addComponent(signInButton, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(807, 807, 807)
-                        .addComponent(jLabel1)))
-                .addContainerGap(646, Short.MAX_VALUE))
+                        .addGap(44, 44, 44)
+                        .addComponent(signUpButton, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(231, 231, 231)
+                        .addComponent(signInButton, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(540, 540, 540))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(414, 414, 414)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(379, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(211, 211, 211)
+                .addGap(212, 212, 212)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(signUpButton)
                     .addComponent(signInButton))
-                .addContainerGap(374, Short.MAX_VALUE))
+                .addGap(346, 346, 346))
         );
 
         pack();
@@ -1333,7 +1363,7 @@ public class ChampionsArena extends javax.swing.JFrame {
                 jTextField1.setText("");
                 jTextField2.setText("");
                 jPasswordField1.setText("");
-                jComboBox1.setSelectedItem("--Select college--");
+                jComboBox2.setSelectedItem("--Select college--");
                 stmt.executeUpdate(sql);
                 JOptionPane.showMessageDialog(null, "Account created successfully.");
                 createAccountFrame.dispose();
@@ -1355,7 +1385,7 @@ public class ChampionsArena extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
-
+        jComboBox2.requestFocus();
     }//GEN-LAST:event_jPasswordField1ActionPerformed
 
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
@@ -1422,10 +1452,6 @@ public class ChampionsArena extends javax.swing.JFrame {
         this.setVisible(true);// TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        System.exit(0);// TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         jTextField3.setText("");
         jPasswordField2.setText("");
@@ -1433,18 +1459,11 @@ public class ChampionsArena extends javax.swing.JFrame {
         this.setVisible(true);// TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        System.exit(0);// TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        System.exit(0);// TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void logoutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutButtonActionPerformed
+        uid = null;
         dashboard.dispose();
         loginFrame.setVisible(true);// TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_logoutButtonActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         dashboard.dispose();
@@ -1492,6 +1511,7 @@ public class ChampionsArena extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void searchFrameWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_searchFrameWindowActivated
+        jTable1.getTableHeader().setFont(new Font("Ubuntu", Font.PLAIN, 24));
         try{
             tm = (DefaultTableModel)jTable1.getModel();
             tm.setRowCount(0);
@@ -1510,6 +1530,7 @@ public class ChampionsArena extends javax.swing.JFrame {
 }//GEN-LAST:event_searchFrameWindowActivated
 
     private void createAccountFrameWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_createAccountFrameWindowActivated
+        //jButton1.setIcon(new ImageIcon(ChampionsArena.class.getResource("BackButton.png")));
         try{
             //System.out.println("Flag 1");
             jComboBox2.removeAllItems();
@@ -1522,6 +1543,8 @@ public class ChampionsArena extends javax.swing.JFrame {
                 jComboBox2.addItem(rs.getString("college"));
                 //System.out.println("Flag 3");
             }
+            jComboBox2.setSelectedItem("--Select college--");
+            jTextField2.requestFocus();
             //System.out.println(jComboBox1.getSelectedIndex());
             //System.out.println("Flag3");
         }
@@ -1529,10 +1552,6 @@ public class ChampionsArena extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
     }//GEN-LAST:event_createAccountFrameWindowActivated
-
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        System.exit(0);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
         jTextField4.setText("");
@@ -1548,6 +1567,7 @@ public class ChampionsArena extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void requestsWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_requestsWindowActivated
+        jTable2.getTableHeader().setFont(new Font("Ubuntu", Font.PLAIN, 24));
         try{
             tm2 = (DefaultTableModel)jTable2.getModel();
             tm2.setRowCount(0);
@@ -1568,10 +1588,6 @@ public class ChampionsArena extends javax.swing.JFrame {
         dashboard.dispose();
     }//GEN-LAST:event_jButton16ActionPerformed
 
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
-        System.exit(0);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton18ActionPerformed
-
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         tm3.setRowCount(0);
         dashboard.setVisible(true);
@@ -1579,6 +1595,7 @@ public class ChampionsArena extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void friendsFrameWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_friendsFrameWindowActivated
+        jTable3.getTableHeader().setFont(new Font("Ubuntu", Font.PLAIN, 24));
         try{
             tm3 = (DefaultTableModel)jTable3.getModel();
             tm3.setRowCount(0);
@@ -1593,10 +1610,6 @@ public class ChampionsArena extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_friendsFrameWindowActivated
 
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-System.exit(0);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton20ActionPerformed
-
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         tm2.setRowCount(0);
         dashboard.setVisible(true);
@@ -1604,7 +1617,7 @@ System.exit(0);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void dashboardWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_dashboardWindowActivated
-        jButton24.setText(uid);
+        // jButton24.setText(uid);
     }//GEN-LAST:event_dashboardWindowActivated
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
@@ -1662,10 +1675,6 @@ System.exit(0);        // TODO add your handling code here:
         dashboard.setVisible(true);
     }//GEN-LAST:event_jButton22ActionPerformed
 
-    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_jButton23ActionPerformed
-
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         problemsFrame.setVisible(true);
         dashboard.dispose();
@@ -1678,25 +1687,19 @@ System.exit(0);        // TODO add your handling code here:
         contestsFrame.dispose();
     }//GEN-LAST:event_jButton25ActionPerformed
 
-    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_jButton26ActionPerformed
-
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
         dashboard.setVisible(true);
         problemsFrame.dispose();
     }//GEN-LAST:event_jButton27ActionPerformed
 
-    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_jButton28ActionPerformed
-
     private void problemsFrameWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_problemsFrameWindowActivated
+        jTable4.getTableHeader().setFont(new Font("Ubuntu", Font.PLAIN, 24));
         try{
             tm4 = (DefaultTableModel)jTable4.getModel();
             tm4.setRowCount(0);
             if(contestMode == 0){ // User is here just to solve problems
                 standingsButton.setVisible(false);
+                jLabel23.setText("Problem Set");
                 sql = "SELECT * FROM PROBLEM WHERE ContestID IN(SELECT ID FROM CONTEST WHERE End < now());";
                 rs = stmt.executeQuery(sql);
                 while(rs.next()){
@@ -1706,6 +1709,7 @@ System.exit(0);        // TODO add your handling code here:
             else if(contestMode == 1){ // User is here to give previous contest, not current
                 standingsButton.setVisible(true);
                 standingsButton.setText("Final standings");
+                jLabel23.setText("Problems - " + contestID);
                 sql = "SELECT * FROM PROBLEM WHERE ContestID = '" + contestID + "';";
                 rs = stmt.executeQuery(sql);
                 while(rs.next()){
@@ -1715,6 +1719,7 @@ System.exit(0);        // TODO add your handling code here:
             else{ // User is here to give a current contest!
                 standingsButton.setVisible(true);
                 standingsButton.setText("Current standings");
+                jLabel23.setText("Problems - " + contestID);
                 sql = "SELECT * FROM PROBLEM WHERE ContestID = '" + contestID + "';";
                 rs = stmt.executeQuery(sql);
                 while(rs.next()){
@@ -1851,11 +1856,13 @@ System.exit(0);        // TODO add your handling code here:
     }//GEN-LAST:event_jTable3MouseClicked
 
     private void contestsFrameWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_contestsFrameWindowActivated
+        jTable5.getTableHeader().setFont(new Font("Ubuntu", Font.PLAIN, 24));
         try{
             contestMode = 2;
             tm5 = (DefaultTableModel)jTable5.getModel();
             tm5.setRowCount(0);
             sql = "SELECT * FROM CONTEST WHERE Start <= now() AND End >= now();";
+            // sql = "SELECT * FROM CONTEST WHERE Start <= now();";
             rs = stmt.executeQuery(sql);
             while(rs.next()){
                 tm5.addRow(new Object [] {rs.getString("ID"), rs.getString("Name"), rs.getString("Start"), rs.getString("End")});
@@ -1909,6 +1916,8 @@ System.exit(0);        // TODO add your handling code here:
     }//GEN-LAST:event_standingsButtonActionPerformed
 
     private void standingsFrameWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_standingsFrameWindowActivated
+        jTable6.getTableHeader().setFont(new Font("Ubuntu", Font.PLAIN, 24));
+        jLabel15.setText("Standings - " + contestID);
         tm6 = (DefaultTableModel)jTable6.getModel();
         tm6.setRowCount(0);
         try{
@@ -1991,6 +2000,14 @@ System.exit(0);        // TODO add your handling code here:
         tm6.setRowCount(0);
     }//GEN-LAST:event_jTable6MouseClicked
 
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+
+    }//GEN-LAST:event_jComboBox2ActionPerformed
+
+    private void loginFrameWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_loginFrameWindowActivated
+        jTextField3.requestFocus();
+    }//GEN-LAST:event_loginFrameWindowActivated
+
     /**
     * @param args the command line arguments
     */
@@ -2011,28 +2028,18 @@ System.exit(0);        // TODO add your handling code here:
     private javax.swing.JFrame dashboard;
     private javax.swing.JFrame friendsFrame;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
     private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
     private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
@@ -2041,7 +2048,11 @@ System.exit(0);        // TODO add your handling code here:
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
@@ -2049,6 +2060,7 @@ System.exit(0);        // TODO add your handling code here:
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
@@ -2083,6 +2095,7 @@ System.exit(0);        // TODO add your handling code here:
     private javax.swing.JTextField jTextField5;
     private javax.swing.JButton loginButton;
     private javax.swing.JFrame loginFrame;
+    private javax.swing.JButton logoutButton;
     private javax.swing.JLabel problemIDLabel;
     private javax.swing.JLabel problemLevelLabel;
     private javax.swing.JTextArea problemStatementTextArea;
