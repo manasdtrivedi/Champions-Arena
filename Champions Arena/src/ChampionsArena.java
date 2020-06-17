@@ -1,4 +1,5 @@
 import java.awt.Font;
+//import javax.swing.ImageIcon;
 import java.sql.*;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -149,6 +150,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
         jComboBox2 = new javax.swing.JComboBox();
+        jLabel29 = new javax.swing.JLabel();
         loginFrame = new javax.swing.JFrame();
         jLabel5 = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
@@ -231,6 +233,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         signUpButton = new javax.swing.JButton();
         signInButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
 
         createAccountFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         createAccountFrame.setMinimumSize(new java.awt.Dimension(1837, 1055));
@@ -239,9 +242,12 @@ public class ChampionsArena extends javax.swing.JFrame {
                 createAccountFrameWindowActivated(evt);
             }
         });
+        createAccountFrame.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(6, 41, 216));
         jLabel2.setText("Enter username:");
+        createAccountFrame.getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 370, -1, -1));
 
         jTextField1.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -249,9 +255,12 @@ public class ChampionsArena extends javax.swing.JFrame {
                 jTextField1ActionPerformed(evt);
             }
         });
+        createAccountFrame.getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(589, 360, 819, 50));
 
         jLabel3.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(6, 41, 216));
         jLabel3.setText("Enter password:");
+        createAccountFrame.getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(394, 464, -1, -1));
 
         jPasswordField1.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
@@ -259,17 +268,23 @@ public class ChampionsArena extends javax.swing.JFrame {
                 jPasswordField1ActionPerformed(evt);
             }
         });
+        createAccountFrame.getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(589, 454, 819, 50));
 
+        createAccountButton.setBackground(new java.awt.Color(132, 254, 245));
         createAccountButton.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
-        createAccountButton.setText("<html><div style=\"color:#0f8ec7;\">Create Account</div></html>");
+        createAccountButton.setForeground(new java.awt.Color(6, 41, 216));
+        createAccountButton.setText("Create Account");
         createAccountButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 createAccountButtonActionPerformed(evt);
             }
         });
+        createAccountFrame.getContentPane().add(createAccountButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 695, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(6, 41, 216));
         jLabel4.setText("Enter name:");
+        createAccountFrame.getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(437, 276, -1, -1));
 
         jTextField2.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
@@ -277,6 +292,7 @@ public class ChampionsArena extends javax.swing.JFrame {
                 jTextField2ActionPerformed(evt);
             }
         });
+        createAccountFrame.getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(589, 266, 819, 50));
 
         jButton1.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jButton1.setText("Back");
@@ -285,9 +301,12 @@ public class ChampionsArena extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        createAccountFrame.getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 12, 100, 71));
 
         jLabel13.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(6, 41, 216));
         jLabel13.setText("Enter college:");
+        createAccountFrame.getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 559, -1, -1));
 
         jComboBox2.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "--Select college--" }));
@@ -296,61 +315,10 @@ public class ChampionsArena extends javax.swing.JFrame {
                 jComboBox2ActionPerformed(evt);
             }
         });
+        createAccountFrame.getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(589, 548, 819, 50));
 
-        javax.swing.GroupLayout createAccountFrameLayout = new javax.swing.GroupLayout(createAccountFrame.getContentPane());
-        createAccountFrame.getContentPane().setLayout(createAccountFrameLayout);
-        createAccountFrameLayout.setHorizontalGroup(
-            createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(createAccountFrameLayout.createSequentialGroup()
-                .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(createAccountFrameLayout.createSequentialGroup()
-                        .addGap(390, 390, 390)
-                        .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addGap(18, 18, 18)
-                        .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 819, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jPasswordField1)
-                                .addComponent(jTextField1)
-                                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 819, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(createAccountFrameLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(429, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, createAccountFrameLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(createAccountButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(753, 753, 753))
-        );
-        createAccountFrameLayout.setVerticalGroup(
-            createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(createAccountFrameLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 183, Short.MAX_VALUE)
-                .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
-                .addGap(44, 44, 44)
-                .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
-                .addGap(44, 44, 44)
-                .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addGap(44, 44, 44)
-                .addGroup(createAccountFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel13))
-                .addGap(97, 97, 97)
-                .addComponent(createAccountButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(298, 298, 298))
-        );
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AbstractBlue.jpg"))); // NOI18N
+        createAccountFrame.getContentPane().add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1840, 1060));
 
         loginFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         loginFrame.setBackground(new java.awt.Color(0, 184, 255));
@@ -1270,53 +1238,37 @@ public class ChampionsArena extends javax.swing.JFrame {
                 formWindowActivated(evt);
             }
         });
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        signUpButton.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
+        signUpButton.setBackground(new java.awt.Color(246, 216, 28));
+        signUpButton.setFont(new java.awt.Font("Ubuntu", 0, 48)); // NOI18N
+        signUpButton.setForeground(new java.awt.Color(0, 111, 222));
         signUpButton.setText("Register");
         signUpButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 signUpButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(signUpButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(617, 626, 230, 70));
 
-        signInButton.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
+        signInButton.setBackground(new java.awt.Color(246, 216, 28));
+        signInButton.setFont(new java.awt.Font("Ubuntu", 0, 48)); // NOI18N
+        signInButton.setForeground(new java.awt.Color(0, 111, 222));
         signInButton.setText("Login");
         signInButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 signInButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(signInButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 626, 230, 70));
 
-        jLabel1.setFont(new java.awt.Font("Ubuntu", 0, 48)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Ubuntu", 0, 72)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 111, 222));
         jLabel1.setText("Welcome to Champions Arena!");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 380, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(630, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(44, 44, 44)
-                        .addComponent(signUpButton, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(231, 231, 231)
-                        .addComponent(signInButton, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addGap(540, 540, 540))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(379, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(212, 212, 212)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(signUpButton)
-                    .addComponent(signInButton))
-                .addGap(346, 346, 346))
-        );
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AbstractOrange.jpg"))); // NOI18N
+        getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1840, 1040));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -1333,6 +1285,8 @@ public class ChampionsArena extends javax.swing.JFrame {
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
         // TODO add your handling code here:
+        //ImageIcon icon = new ImageIcon("/BackButton.png");
+        //this.setIconImage(icon.getImage());
         try{
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost/cparena", "root", "1234");
@@ -1996,7 +1950,7 @@ public class ChampionsArena extends javax.swing.JFrame {
     private void jTable6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable6MouseClicked
         userToView = (String)tm6.getValueAt(jTable6.getSelectedRow(), 0);
         profileFrame.setVisible(true);
-        searchFrame.dispose();
+        standingsFrame.dispose();
         tm6.setRowCount(0);
     }//GEN-LAST:event_jTable6MouseClicked
 
@@ -2061,10 +2015,12 @@ public class ChampionsArena extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
