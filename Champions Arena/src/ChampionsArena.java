@@ -1,6 +1,5 @@
 import java.awt.Color;
 import java.awt.Font;
-//import javax.swing.ImageIcon;
 import java.sql.*;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -75,7 +74,7 @@ public class ChampionsArena extends javax.swing.JFrame {
      */
     String executeCommand(String cmd){
         try {
-            System.out.println("Attempting to run command '" + cmd + "'...");
+            //System.out.println("Attempting to run command '" + cmd + "'...");
             processBuilder.command("bash", "-c", cmd);
             Process process = processBuilder.start();
 
@@ -89,11 +88,11 @@ public class ChampionsArena extends javax.swing.JFrame {
 
             int exitVal = process.waitFor();
             if (exitVal == 0) {
-		System.out.println("Success!");
+		//System.out.println("Success!");
 		return output;
             }
             else {
-		System.out.println("Something went wrong in executing the command.");
+		//System.out.println("Something went wrong in executing the command.");
             }
 
         }
@@ -118,7 +117,7 @@ public class ChampionsArena extends javax.swing.JFrame {
             return data;
         }
         catch (Exception e) {
-            System.out.println("Error occurred in compilation step.");
+            //System.out.println("Error occurred in compilation step.");
             e.printStackTrace();
             return "";
         }
@@ -129,10 +128,10 @@ public class ChampionsArena extends javax.swing.JFrame {
             FileWriter fileWriter = new FileWriter(fileName);
             fileWriter.write(data);
             fileWriter.close();
-            System.out.println("File written successfully");
+            //System.out.println("File written successfully");
         }
         catch(Exception e){
-            System.out.println("Error occurred in writing to file.");
+            //System.out.println("Error occurred in writing to file.");
             e.printStackTrace();
         }
     }
@@ -1069,12 +1068,9 @@ public class ChampionsArena extends javax.swing.JFrame {
 }//GEN-LAST:event_signInButtonActionPerformed
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
-        // TODO add your handling code here:
-        //ImageIcon icon = new ImageIcon("/BackButton.png");
-        //this.setIconImage(icon.getImage());
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost/cparena", "root", "1234");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/ChampionsArena", "root", "");
             stmt = con.createStatement();
         }
         catch(Exception e){
@@ -1086,19 +1082,19 @@ public class ChampionsArena extends javax.swing.JFrame {
     private void createAccountButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createAccountButtonActionPerformed
         try{
             String college = (String)jComboBox2.getSelectedItem();
-            System.out.println("College obtained from jComboBox2 is: " + college);
-            System.out.println("jComboBox2.getSelectedIndex() gives: " + jComboBox2.getSelectedIndex());
+            //System.out.println("College obtained from jComboBox2 is: " + college);
+            //System.out.println("jComboBox2.getSelectedIndex() gives: " + jComboBox2.getSelectedIndex());
             if(jComboBox2.getSelectedIndex()==0 || jComboBox2.getSelectedIndex()==-1){
                 college = JOptionPane.showInputDialog(null, "College not on the list?\nEnter the name of your college here:");
-                System.out.println("College obtained from JOptionPane is: " + college);
+                //System.out.println("College obtained from JOptionPane is: " + college);
             }
-            System.out.println("Flag3");
+            //System.out.println("Flag3");
             if(college == null || college.equals("")){
                 JOptionPane.showMessageDialog(null, "Please enter name of college to create account.");
             }
             else{
                 sql = "INSERT INTO USER VALUES('" + jTextField1.getText() + "', '" + jTextField2.getText() + "', '" + new String(jPasswordField1.getPassword()) + "', '" + college + "');";
-                System.out.println(sql);
+                //System.out.println(sql);
                 jTextField1.setText("");
                 jTextField2.setText("");
                 jPasswordField1.setText("");
@@ -1133,7 +1129,7 @@ public class ChampionsArena extends javax.swing.JFrame {
             String passwd = new String(jPasswordField2.getPassword());
             //System.out.println(passwd);
             sql = "SELECT * FROM USER WHERE uid = '" + uid + "';";
-            System.out.println(sql);
+            //System.out.println(sql);
             rs = stmt.executeQuery(sql);
             rs.first();
             //System.out.println(rs.getString("passwd"));
@@ -1163,7 +1159,7 @@ public class ChampionsArena extends javax.swing.JFrame {
             String passwd = new String(jPasswordField2.getPassword());
             //System.out.println(passwd);
             sql = "SELECT * FROM USER WHERE uid = '" + uid + "';";
-            System.out.println(sql);
+            //System.out.println(sql);
             rs = stmt.executeQuery(sql);
             rs.first();
             //System.out.println(rs.getString("passwd"));
@@ -1174,7 +1170,7 @@ public class ChampionsArena extends javax.swing.JFrame {
                 loginFrame.dispose();
             }
             else{
-                System.out.println("Incorrect password.\nPlease try again.");
+                JOptionPane.showMessageDialog(null, "Incorrect password.\nPlease try again.");
                 jPasswordField2.setText("");
             }
         }
@@ -1188,14 +1184,14 @@ public class ChampionsArena extends javax.swing.JFrame {
         jTextField1.setText("");
         jPasswordField1.setText("");
         createAccountFrame.dispose();
-        this.setVisible(true);// TODO add your handling code here:
+        this.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         jTextField3.setText("");
         jPasswordField2.setText("");
         loginFrame.dispose();
-        this.setVisible(true);// TODO add your handling code here:
+        this.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void logoutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutButtonActionPerformed
@@ -1231,7 +1227,7 @@ public class ChampionsArena extends javax.swing.JFrame {
                 sql = "SELECT * FROM USER WHERE uname LIKE '%" + name + "%' AND college = '" + college + "' ORDER BY uname ASC;";
             else
                 sql = "SELECT * FROM USER WHERE uid = '" + username + "' AND uname LIKE '%" + name + "%' AND college = '" + college + "' ORDER BY uname ASC;";
-            System.out.println(sql);
+            //System.out.println(sql);
             rs = stmt.executeQuery(sql);
             while(rs.next()){
                 if( ! uid.equals(rs.getString("uid"))){
@@ -1259,7 +1255,7 @@ public class ChampionsArena extends javax.swing.JFrame {
             sql = "SELECT DISTINCT college FROM USER ORDER BY college ASC;";
             rs = stmt.executeQuery(sql);
             while(rs.next()){
-                System.out.println("rs.getString(\"college\") gives "+ rs.getString("college"));
+                //System.out.println("rs.getString(\"college\") gives "+ rs.getString("college"));
                 jComboBox1.addItem(rs.getString("college"));
             }
         }
@@ -1276,7 +1272,7 @@ public class ChampionsArena extends javax.swing.JFrame {
             jComboBox2.addItem("--Select college--");
             sql = "SELECT DISTINCT college FROM USER ORDER BY college ASC;";
             rs = stmt.executeQuery(sql);
-            System.out.println("Flag 2");
+            //System.out.println("Flag 2");
             while(rs.next()){
                 //System.out.println("rs.getString(\"college\") gives "+ rs.getString("college"));
                 jComboBox2.addItem(rs.getString("college"));
@@ -1311,7 +1307,7 @@ public class ChampionsArena extends javax.swing.JFrame {
             tm2 = (DefaultTableModel)jTable2.getModel();
             tm2.setRowCount(0);
             sql = "SELECT * FROM USER WHERE uid IN(SELECT user1 FROM CONNECTION WHERE user2 = '" + uid + "' AND status = 0);";
-            System.out.println(sql);
+            //System.out.println(sql);
             rs = stmt.executeQuery(sql);
             while(rs.next()){
                 tm2.addRow(new Object [] {rs.getString("uid"), rs.getString("uname"), rs.getString("college")});
@@ -1526,7 +1522,7 @@ public class ChampionsArena extends javax.swing.JFrame {
             executeCommand(cmd);
         }
         else{
-            System.out.println("Compiled successfully.");
+            //System.out.println("Compiled successfully.");
         
             try{
                 sql = "SELECT * FROM TESTCASE WHERE ID = '" + currentProblemID + "';";
