@@ -129,7 +129,7 @@ Next, ensure that your MySQL 'Root' password is set to "" i.e. empty.
 
 Now, double-click Champions_Arena.jar to run it. If it doesn't run, right click it, go to Properties, and under the Permissions tab tick the 'Allow executing file as program' checkbox.
 
-###Team Members
+### Team Members
 ```
 Aditya Chandrashekhar Sohoni    (181CO203)
 Manas Trivedi                   (181CO231)
