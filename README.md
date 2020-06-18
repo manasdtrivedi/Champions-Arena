@@ -1,8 +1,19 @@
-# Champions-Arena
-A competitive programming platform.
+# Champions Arena
+The project 'Champions Arena' is a competitive programming platform, which supports systems running on Linux.
 
-### Commands for creation of MySQL tables:
+Champions_Arena.jar is the executable file to be run, which is present at Champions Arena/dist.
 
+To run this file, first check if Java is installed on your system by issuing the following command in the Terminal:
+```
+java -version
+```
+
+If Java is not present, issue this command:
+```
+sudo apt install default-jre
+```
+
+This downloads the Java Runtime Environment. Now, in MySQL, issue the following commands:
 ```
 CREATE DATABASE cparena;
 
@@ -68,18 +79,19 @@ INSERT INTO PROBLEM VALUES('3B', 'Prime Numbers', 'For T test cases, print YES i
 CREATE TABLE TESTCASE
 (
 ID varchar(10) REFERENCES PROBLEM(ID),
+TestNo int,
 Input varchar(10000),
 ExpectedOutput varchar(10000)
 );
 
 
-INSERT INTO TESTCASES VALUES('1A', 1, '3\n0 1\n2 3\n100 200\n', '1\n5\n300\n');
+INSERT INTO TESTCASE VALUES('1A', 1, '3\n0 1\n2 3\n100 200\n', '1\n5\n300\n');
 
-INSERT INTO TESTCASES VALUES('1A', 2, '5\n0 0\n10000 10000\n-9 -16\n25 -25\n99999 1\n', '0\n20000\n-25\n0\n100000\n');
+INSERT INTO TESTCASE VALUES('1A', 2, '5\n0 0\n10000 10000\n-9 -16\n25 -25\n99999 1\n', '0\n20000\n-25\n0\n100000\n');
 
-INSERT INTO TESTCASES VALUES('1B', 1, '3\n0 1\n2 3\n100 200\n', '0\n6\n20000\n');
+INSERT INTO TESTCASE VALUES('1B', 1, '3\n0 1\n2 3\n100 200\n', '0\n6\n20000\n');
 
-INSERT INTO TESTCASES VALUES('1B', 2, '5\n0 0\n100 100\n-9 -16\n25 -25\n99999 1\n', '0\n10000\n144\n-625\n99999\n');
+INSERT INTO TESTCASE VALUES('1B', 2, '5\n0 0\n100 100\n-9 -16\n25 -25\n99999 1\n', '0\n10000\n144\n-625\n99999\n');
 
 INSERT INTO TESTCASE VALUES('2A', 1, '3\n0 0\n25 16\n16 25\n', '0\n9\n-9\n');
 
@@ -108,3 +120,5 @@ C tinyint(4),
 PRIMARY KEY(uid, ContestID)
 );
 ```
+
+Now, double-click Champions_Arena.jar to run it. If it doesn't run, right click it, go to Properties, and under the Permissions tab tick the 'Allow executing file as program' checkbox.
