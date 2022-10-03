@@ -330,7 +330,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         });
         createAccountFrame.getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(589, 548, 819, 50));
 
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AbstractBlue.jpg"))); // NOI18N
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/AbstractBlue.jpg"))); // NOI18N
         createAccountFrame.getContentPane().add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1840, 1060));
 
         loginFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -393,7 +393,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         });
         loginFrame.getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 12, 100, 70));
 
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AbstractColourful.jpg"))); // NOI18N
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/AbstractColourful.jpg"))); // NOI18N
         loginFrame.getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(-3, -3, 1840, 1060));
 
         dashboard.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -488,7 +488,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         });
         dashboard.getContentPane().add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(1432, 160, 166, 81));
 
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AbstractSquare.jpg"))); // NOI18N
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/AbstractSquare.jpg"))); // NOI18N
         dashboard.getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(-3, 0, 1840, 1060));
 
         searchFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -573,7 +573,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         });
         searchFrame.getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 12, 100, 70));
 
-        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AbstractLightPurple.jpg"))); // NOI18N
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/AbstractLightPurple.jpg"))); // NOI18N
         searchFrame.getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1840, 1030));
 
         requests.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -622,7 +622,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         jLabel12.setText("Connection Requests");
         requests.getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(743, 100, -1, -1));
 
-        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AbstractYellow.jpg"))); // NOI18N
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/AbstractYellow.jpg"))); // NOI18N
         requests.getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1840, 1060));
 
         friendsFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -671,7 +671,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         jLabel14.setText("Friends");
         friendsFrame.getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 110, -1, -1));
 
-        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/YellowGradient.png"))); // NOI18N
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/YellowGradient.png"))); // NOI18N
         friendsFrame.getContentPane().add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1840, 1020));
 
         profileFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -735,7 +735,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         });
         profileFrame.getContentPane().add(profileActionButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(844, 663, -1, -1));
 
-        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/LightGreen.jpg"))); // NOI18N
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/LightGreen.jpg"))); // NOI18N
         profileFrame.getContentPane().add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1840, 1060));
 
         contestsFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -808,7 +808,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         contestsFrame.getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 110, -1, -1));
 
         jLabel40.setBackground(new java.awt.Color(108, 61, 14));
-        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Energy.jpg"))); // NOI18N
+        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Energy.jpg"))); // NOI18N
         contestsFrame.getContentPane().add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1840, 1060));
 
         problemsFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -869,7 +869,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         problemsFrame.getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 120, -1, -1));
         problemsFrame.getContentPane().add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 38, 130, 30));
 
-        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Lightning.jpg"))); // NOI18N
+        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Lightning.jpg"))); // NOI18N
         problemsFrame.getContentPane().add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1840, 1060));
 
         solveProblemFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -963,7 +963,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         });
         solveProblemFrame.getContentPane().add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 12, 100, 70));
 
-        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AbstractDarkGrey.jpg"))); // NOI18N
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/AbstractDarkGrey.jpg"))); // NOI18N
         solveProblemFrame.getContentPane().add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1840, 1070));
 
         standingsFrame.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -1012,7 +1012,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         jLabel15.setText("Standings - R1");
         standingsFrame.getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 210, -1, -1));
 
-        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BlackDesigner.jpg"))); // NOI18N
+        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/BlackDesigner.jpg"))); // NOI18N
         standingsFrame.getContentPane().add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(-3, -2, 1860, 1060));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -1051,7 +1051,7 @@ public class ChampionsArena extends javax.swing.JFrame {
         jLabel1.setText("Welcome to Champions Arena!");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 380, -1, -1));
 
-        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AbstractOrange.jpg"))); // NOI18N
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/AbstractOrange.jpg"))); // NOI18N
         getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1840, 1040));
 
         pack();
