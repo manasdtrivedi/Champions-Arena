@@ -193,7 +193,7 @@
         <Component class="javax.swing.JLabel" name="jLabel29">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/AbstractBlue.jpg"/>
+              <Image iconType="3" name="/images/AbstractBlue.jpg"/>
             </Property>
           </Properties>
           <Constraints>
@@ -335,7 +335,7 @@
         <Component class="javax.swing.JLabel" name="jLabel30">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/AbstractColourful.jpg"/>
+              <Image iconType="3" name="/images/AbstractColourful.jpg"/>
             </Property>
           </Properties>
           <Constraints>
@@ -535,7 +535,7 @@
         <Component class="javax.swing.JLabel" name="jLabel31">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/AbstractSquare.jpg"/>
+              <Image iconType="3" name="/images/AbstractSquare.jpg"/>
             </Property>
           </Properties>
           <Constraints>
@@ -748,7 +748,7 @@
         <Component class="javax.swing.JLabel" name="jLabel32">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/AbstractLightPurple.jpg"/>
+              <Image iconType="3" name="/images/AbstractLightPurple.jpg"/>
             </Property>
           </Properties>
           <Constraints>
@@ -849,7 +849,7 @@
         <Component class="javax.swing.JLabel" name="jLabel33">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/AbstractYellow.jpg"/>
+              <Image iconType="3" name="/images/AbstractYellow.jpg"/>
             </Property>
           </Properties>
           <Constraints>
@@ -950,7 +950,7 @@
         <Component class="javax.swing.JLabel" name="jLabel34">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/YellowGradient.png"/>
+              <Image iconType="3" name="/images/YellowGradient.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -1119,7 +1119,7 @@
         <Component class="javax.swing.JLabel" name="jLabel36">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/LightGreen.jpg"/>
+              <Image iconType="3" name="/images/LightGreen.jpg"/>
             </Property>
           </Properties>
           <Constraints>
@@ -1268,7 +1268,7 @@
               <Color blue="e" green="3d" red="6c" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Energy.jpg"/>
+              <Image iconType="3" name="/images/Energy.jpg"/>
             </Property>
           </Properties>
           <Constraints>
@@ -1398,7 +1398,7 @@
         <Component class="javax.swing.JLabel" name="jLabel39">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Lightning.jpg"/>
+              <Image iconType="3" name="/images/Lightning.jpg"/>
             </Property>
           </Properties>
           <Constraints>
@@ -1654,7 +1654,7 @@
         <Component class="javax.swing.JLabel" name="jLabel35">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/AbstractDarkGrey.jpg"/>
+              <Image iconType="3" name="/images/AbstractDarkGrey.jpg"/>
             </Property>
           </Properties>
           <Constraints>
@@ -1756,7 +1756,7 @@
         <Component class="javax.swing.JLabel" name="jLabel37">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/BlackDesigner.jpg"/>
+              <Image iconType="3" name="/images/BlackDesigner.jpg"/>
             </Property>
           </Properties>
           <Constraints>
@@ -1861,7 +1861,7 @@
     <Component class="javax.swing.JLabel" name="jLabel24">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/AbstractOrange.jpg"/>
+          <Image iconType="3" name="/images/AbstractOrange.jpg"/>
         </Property>
       </Properties>
       <Constraints>
